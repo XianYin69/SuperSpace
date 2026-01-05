@@ -8,9 +8,9 @@ internal sealed partial class ExcelPage : ListPage
 {
     public ExcelPage()
     {
-        Icon = IconHelpers.FromRelativePath("Assets\\WordLogo.png");
-        Title = "Word";
-        Name = "Open Word";
+        Icon = IconHelpers.FromRelativePath("Assets\\OfficePlusExcelPageIcon.png");
+        Title = "Excel";
+        Name = "";
     }
     public override IListItem[] GetItems()
     {

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="42mm"
+   height="42mm"
+   viewBox="0 0 42 42"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="OfficePlusExcelPageIcon.svg"
+   inkscape:export-filename="OfficePlusExcelPageIcon.png"
+   inkscape:export-xdpi="26.341658"
+   inkscape:export-ydpi="26.341658"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.0948583"
+     inkscape:cx="163.0348"
+     inkscape:cy="502.34811"
+     inkscape:window-width="1314"
+     inkscape:window-height="1493"
+     inkscape:window-x="1271"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="图层 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g2-1"
+       transform="matrix(2.1093063,0,0,2.1093063,-6.1824127,-13.71509)">
+      <rect
+         style="fill:#007a66;fill-opacity:1;stroke:#4bafbb;stroke-width:0;stroke-linejoin:miter;stroke-opacity:0.348837"
+         id="rect1-1"
+         width="16.738001"
+         height="16.737873"
+         x="5.7488742"
+         y="8.0891237"
+         sodipodi:type="rect"
+         rx="2"
+         ry="2" />
+      <rect
+         style="fill:#00b294;fill-opacity:1;stroke:#4bafbb;stroke-width:0;stroke-linejoin:miter;stroke-opacity:0.348837"
+         id="rect2-5"
+         width="9.4627485"
+         height="9.4627485"
+         x="3.2869186"
+         y="11.091995"
+         rx="2"
+         ry="2" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:5.33333px;font-family:'Microsoft JhengHei';-inkscape-font-specification:'Microsoft JhengHei Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#2089dc;fill-opacity:1;stroke:#4bafbb;stroke-width:0;stroke-linejoin:miter;stroke-opacity:0.348837"
+         x="6.2435546"
+         y="17.840296"
+         id="text2-2"><tspan
+           sodipodi:role="line"
+           id="tspan2-7"
+           x="6.2435546"
+           y="17.840296"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#ffffff;fill-opacity:1">X</tspan></text>
+    </g>
+  </g>
+</svg>

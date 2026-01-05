@@ -7,9 +7,9 @@ internal sealed partial class WordPage : ListPage
 {
     public WordPage()
     {
-        Icon = IconHelpers.FromRelativePath("Assets\\WordLogo.png");
+        Icon = IconHelpers.FromRelativePath("Assets\\OfficePlusWordPageIcon.png");
         Title = "Word";
-        Name = "Open Word";
+        Name = "";
     }
     public override IListItem[] GetItems()
     {

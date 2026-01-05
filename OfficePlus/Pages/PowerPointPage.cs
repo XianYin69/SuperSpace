@@ -8,9 +8,9 @@ internal sealed partial class PowerPointPage : ListPage
 {
     public PowerPointPage()
     {
-        Icon = IconHelpers.FromRelativePath("Assets\\WordLogo.png");
-        Title = "Word";
-        Name = "Open Word";
+        Icon = IconHelpers.FromRelativePath("Assets\\OfficePlusPowerPointPageIcon.png");
+        Title = "PowerPoint";
+        Name = "";
     }
     public override IListItem[] GetItems()
     {
