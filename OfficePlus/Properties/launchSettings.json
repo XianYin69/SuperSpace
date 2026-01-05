@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "OfficePlus (Package)": {
+      "commandName": "MsixPackage",
+      "doNotLaunchApp": true
+    },
+    "OfficePlus (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
