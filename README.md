@@ -5,7 +5,7 @@
 这是一个插件用于创建或打开xlsx, docx, pptx等文件。
 
 ## 贡献者
-<a href="https://github.com/XianYin69/OfficePlus">
+<a href="https://github.com/XianYin69/OfficePlus/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=XianYin69/OfficePlus" />
 </a>
 
