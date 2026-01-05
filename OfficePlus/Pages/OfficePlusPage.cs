@@ -19,7 +19,10 @@ internal sealed partial class OfficePlusPage : ListPage
     public override IListItem[] GetItems()
     {
         return [
-            new ListItem(new NoOpCommand()) { Title = "TODO: Implement your extension here" }
+            new ListItem(new NoOpCommand()) { Title = "注意：这是一个非微软官方拓展" },
+            new ListItem(new NoOpCommand()) { Title = "Word" },
+            new ListItem(new NoOpCommand()) { Title = "Excel" },
+            new ListItem(new NoOpCommand()) { Title = "PowerPoint" }
         ];
     }
 }
