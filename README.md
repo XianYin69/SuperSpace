@@ -6,7 +6,7 @@
 
 ## 贡献者
 <a href="https://github.com/XianYin69/OfficePlus/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=XianYin69/OfficePlus" />
+  <img src="https://contrib.rocks/image?repo=XianYin69/OfficePlus" width="20rem" alt=""/>
 </a>
 
 ## 许可证
