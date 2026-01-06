@@ -365,3 +365,6 @@ FodyWeavers.xsd
 #Microsoft Need
 **/Properties/launchSettings.json
 *.pubxml
+
+#Block media file Upload
+*.png
