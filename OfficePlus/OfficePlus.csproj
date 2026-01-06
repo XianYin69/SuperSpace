@@ -83,6 +83,9 @@
 
     <!-- When publishing trimmed, make sure to treat trimming warnings as build errors -->
     <ILLinkTreatWarningsAsErrors>true</ILLinkTreatWarningsAsErrors>
+    <PackageCertificateThumbprint>1569FCA7861648F815FFB8B5D2ED25153AA0AE3B</PackageCertificateThumbprint>
+    <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
+    <DefaultLanguage>zh-Hans</DefaultLanguage>
 
   </PropertyGroup>
 

@@ -4,6 +4,7 @@
 
 using Microsoft.CommandPalette.Extensions;
 using Microsoft.CommandPalette.Extensions.Toolkit;
+using OfficePlus.Pages;
 
 namespace OfficePlus;
 
@@ -15,9 +16,10 @@ public partial class OfficePlusCommandsProvider : CommandProvider
     {
         DisplayName = "OfficePlus";
         Icon = IconHelpers.FromRelativePath("Assets\\StoreLogo.png");
-        _commands = [
+        _commands = new ICommandItem[]
+        {
             new CommandItem(new OfficePlusPage()) { Title = DisplayName },
-        ];
+        };
     }
 
     public override ICommandItem[] TopLevelCommands()
