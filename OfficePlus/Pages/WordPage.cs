@@ -19,6 +19,7 @@ internal sealed partial class WordPage : ListPage
             new ListItem(new NoOpCommand())
             {
                 Title = "新建",
+                Icon = "\uF8AA"
             },
             new ListItem(new NoOpCommand())
             {
