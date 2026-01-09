@@ -22,7 +22,7 @@ internal sealed partial class PowerPointPage : ListPage
     {
         var items = new List<IListItem>
         {
-            new ListItem(new RunProcessCommand("POWERPNT.EXE"))
+            new ListItem(new RunPowerPointCommand("POWERPNT.EXE"))
             {
                 Title = "新建演示文稿",
                 Subtitle = "启动PowerPoint并创建新演示文稿",
@@ -39,15 +39,13 @@ internal sealed partial class PowerPointPage : ListPage
     }
 }
 // Add a starting process class
-internal sealed class RunProcessCommand :　InvokableCommand
+internal sealed class RunPowerPointCommand :　InvokableCommand
 {
     private readonly string _executable;
-    private readonly string _arguments;
     
-    public RunProcessCommand(string executable, string arguments = "")
+    public RunPowerPointCommand(string executable)
     {
         _executable = executable;
-        _arguments = arguments;
     }
 
     public override CommandResult Invoke()
@@ -57,7 +55,6 @@ internal sealed class RunProcessCommand :　InvokableCommand
             Process.Start(new ProcessStartInfo
             {
                 FileName = _executable,
-                Arguments = _arguments,
                 UseShellExecute = true
             });
             return CommandResult.Dismiss();
@@ -112,7 +109,7 @@ internal sealed partial class PowerPointRecentPage : ListPage
                         ? Path.GetFileNameWithoutExtension(file.Name)
                         : file.Name;
 
-                    items.Add(new ListItem(new RunProcessCommand(file.FullName))
+                    items.Add(new ListItem(new RunPowerPointCommand(file.FullName))
                     {
                         Title = displayName,
                         Subtitle = $"上次修改: {file.LastWriteTime.ToShortDateString()}",

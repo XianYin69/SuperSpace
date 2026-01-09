@@ -2,6 +2,10 @@
 using Microsoft.CommandPalette.Extensions;
 using Microsoft.CommandPalette.Extensions.Toolkit;
 using System.Collections.Generic;
+using System;
+using System.Diagnostics;
+using System.IO;
+using System.Linq;
 
 namespace OfficePlus.Pages;
 
@@ -31,3 +35,30 @@ internal sealed partial class ExcelPage : ListPage
         return items.ToArray();
     }
 }
+internal sealed class RunExcelCommand :　InvokableCommand
+{
+    private readonly string _executable;
+    public RunExcelCommand(string executable)
+    {
+        _executable = executable;
+    }
+
+    public override CommandResult Invoke()
+    {
+        try
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = _executable,
+                UseShellExecute = true
+            });
+            return CommandResult.Dismiss();
+        }
+        catch
+        {
+            return CommandResult.KeepOpen();
+        }
+    }
+}
+
+internal sealed partial class ExcelRecentPage :　ListPage
