@@ -20,10 +20,12 @@ internal sealed partial class ExcelPage : ListPage
             new ListItem(new NoOpCommand())
             {
                 Title = "新建",
+                Icon = IconHelpers.FromRelativePath("Asset\\FluentColorDocumentAdd48.png")
             },
             new ListItem(new NoOpCommand())
             {
                 Title = "打开",
+                Icon = IconHelpers.FromRelativePath("Asset\\FluentColorDocumentEdit24.png")
             }
         };
         return items.ToArray();

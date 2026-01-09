@@ -53,7 +53,8 @@ internal sealed partial class OfficePlusPage : ListPage
                     // 显示为文件名（包含扩展名），选择时导航到一个会打开该文件的页面
                     string displayName = Path.GetFileNameWithoutExtension(file);
                     items.Add(new ListItem(new OpenFileCommand(file)) {
-                        Title = displayName
+                        Title = displayName,
+                        Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocument48.png")
                     });
                 }
             }
