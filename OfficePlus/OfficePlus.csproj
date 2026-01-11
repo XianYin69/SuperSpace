@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <RootNamespace>OfficePlus</RootNamespace>
@@ -92,13 +92,12 @@
 
     <!-- When publishing trimmed, make sure to treat trimming warnings as build errors -->
     <ILLinkTreatWarningsAsErrors>true</ILLinkTreatWarningsAsErrors>
-    <PackageCertificateThumbprint>1569FCA7861648F815FFB8B5D2ED25153AA0AE3B</PackageCertificateThumbprint>
-    <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
     <DefaultLanguage>zh-Hans</DefaultLanguage>
-
+    <!-- Add my info -->
     <AppxPackageIdentityName>EthanYan.12212EF86A98</AppxPackageIdentityName>
     <AppxPackagePublisher>CN=28366248-4867-41FB-8408-2387CA3809DB</AppxPackagePublisher>
     <AppxPackageVersion>0.0.1.0</AppxPackageVersion>
+    <AppxPackageSigningEnabled>false</AppxPackageSigningEnabled>
     
     <!--Disable Trim-->
     <PublishTrimmed>false</PublishTrimmed>
