@@ -9,15 +9,15 @@
   IgnorableNamespaces="uap uap3 rescap">
 
   <Identity
-    Name="OfficePlus"
-    Publisher="CN=EthanYan"
+    Name="EthanYan.12212EF86A98"
+    Publisher="CN=28366248-4867-41FB-8408-2387CA3809DB"
     Version="0.0.1.0" />
   <!-- When you're ready to publish your extension, you'll need to change the
        Publisher= to match your own identity -->
 
   <Properties>
-    <DisplayName>OfficePlus</DisplayName>
-    <PublisherDisplayName>XianYin</PublisherDisplayName>
+    <DisplayName>OfficePlus for PowerToys Run</DisplayName>
+    <PublisherDisplayName>EthanYan</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 

@@ -49,32 +49,29 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <None Update="Assets\FluentColorDocument48.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Assets\FluentColorDocumentAdd48.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Assets\FluentColorDocumentEdit24.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Assets\OfficePlusExcelPageIcon.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Assets\OfficePlusPageIcon.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Assets\OfficePlusPowerPointPageIcon.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Assets\OfficePlusWordPageIcon.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="OfficePlus_TemporaryKey.pfx">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+    <Content Include="Assets\**\*.png" />
   </ItemGroup>
-
+  <Target Name="PrepareAssets" BeforeTargets="BeforeBuild">
+    <!-- Copy scale-specific assets to base filenames expected by store validations -->
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\Assets\Square150x150Logo.scale-200.png"
+          DestinationFiles="$(MSBuildProjectDirectory)\Assets\Square150x150Logo.png"
+          SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\Assets\Square44x44Logo.scale-200.png"
+          DestinationFiles="$(MSBuildProjectDirectory)\Assets\SmallTile.png"
+          SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\Assets\Wide310x150Logo.scale-200.png"
+          DestinationFiles="$(MSBuildProjectDirectory)\Assets\Wide310x150Logo.png"
+          SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\Assets\SplashScreen.scale-200.png"
+          DestinationFiles="$(MSBuildProjectDirectory)\Assets\SplashScreen.png"
+          SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\Assets\Square150x150Logo.scale-200.png"
+          DestinationFiles="$(MSBuildProjectDirectory)\Assets\LargeTile.png"
+          SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\Assets\StoreLogo.scale-100.png"
+          DestinationFiles="$(MSBuildProjectDirectory)\Assets\StoreLogo.png"
+          SkipUnchangedFiles="true" />
+  </Target>
   <!--
     Defining the "HasPackageAndPublishMenuAddedByProject" property here allows the Solution
     Explorer "Package and Publish" context menu entry to be enabled for this project even if
@@ -99,6 +96,14 @@
     <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
     <DefaultLanguage>zh-Hans</DefaultLanguage>
 
+    <AppxPackageIdentityName>EthanYan.12212EF86A98</AppxPackageIdentityName>
+    <AppxPackagePublisher>CN=28366248-4867-41FB-8408-2387CA3809DB</AppxPackagePublisher>
+    <AppxPackageVersion>0.0.1.0</AppxPackageVersion>
+    
+    <!--Disable Trim-->
+    <PublishTrimmed>false</PublishTrimmed>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <CsWinRTrimDisabled>true</CsWinRTrimDisabled>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)'=='Debug'">

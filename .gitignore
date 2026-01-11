@@ -368,3 +368,8 @@ FodyWeavers.xsd
 
 #Block media file Upload
 *.png
+
+#Released Packages
+*.msix
+*.msixbundle
+
