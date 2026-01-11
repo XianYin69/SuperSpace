@@ -24,7 +24,7 @@ internal sealed partial class ExcelPage : ListPage
             new ListItem(new RunExcelCommand("EXCEL.EXE"))
             {
                 Title = "新建工作表",
-                Subtitle = "启动Excle并新建工作表",
+                Subtitle = "启动Excel并新建工作表",
                 Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocumentAdd48.png"),
             },
             new ListItem(new ExcelRecentPage())
