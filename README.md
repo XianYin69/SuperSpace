@@ -9,5 +9,14 @@
   <img src="https://contrib.rocks/image?repo=XianYin69/OfficePlus" width="20rem" alt=""/>
 </a>
 
+## 隐私策略声明
+```
+ *注：“OfficePlus”将使用“本扩展”替代
+```
+本扩展是一个本地扩展
+- **数据搜集**：本扩展不会收集、存储或是转手任何个人数据。
+- **Office 数据**：本扩展仅读取本地的office最近文件来提供文件搜索。
+- **网络访问**：本扩展不会使用任何网络功能。
+
 ## 许可证
 本项目使用[MIT](./LICENSE.txt)协议
