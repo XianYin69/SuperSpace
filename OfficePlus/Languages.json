@@ -1,0 +1,201 @@
+{
+  "default": {
+    "OfficePlusPage": {
+      "Item2": "Word",
+      "Item3": "Excel",
+      "Item4": "PowerPoint"
+    }
+  },
+  "en-US": {
+    "OfficePlusPage": { "Item1": "WARNING: it is an unofficial plugin for Microsoft Office" },
+    "WordPage": {
+      "CreateNewDoc": "Create New Document",
+      "CreateNewDocSub": "Open Microsoft Word and create a new document",
+      "OpenDoc": "Open Document",
+      "OpenDocSub": "Open recent document",
+      "WordRecentPage": "Recent Documents"
+    },
+    "ExcelPage": {
+      "CreateNewDoc": "Create New Workbook",
+      "CreateNewDocSub": "Open Microsoft Excel and create a new workbook",
+      "OpenDoc": "Open Workbook",
+      "OpenDocSub": "Open recent workbook",
+      "WordRecentPage": "Recent Workbooks"
+    },
+    "PowerPointPage": {
+      "CreateNewDoc": "Create New Presentation",
+      "CreateNewDocSub": "Open Microsoft PowerPoint and create a new presentation",
+      "OpenDoc": "Open Presentation",
+      "OpenDocSub": "Open recent presentation",
+      "WordRecentPage": "Recent Presentations"
+    }
+  },
+  "zh-CN": {
+    "OfficePlusPage": { "Item1": "！！！注意：此扩展为非微软官方扩展！！！" },
+    "WordPage": {
+      "CreateNewDoc": "创建新文档",
+      "CreateNewDocSub": "打开 Microsoft Word 并创建新文档",
+      "OpenDoc": "打开文档",
+      "OpenDocSub": "打开最近的文档",
+      "WordRecentPage": "最近文档"
+    },
+    "ExcelPage": {
+      "CreateNewDoc": "创建新工作簿",
+      "CreateNewDocSub": "打开 Microsoft Excel 并创建新工作簿",
+      "OpenDoc": "打开工作簿",
+      "OpenDocSub": "打开最近的工作簿",
+      "WordRecentPage": "最近工作簿"
+    },
+    "PowerPointPage": {
+      "CreateNewDoc": "创建新演示文稿",
+      "CreateNewDocSub": "打开 Microsoft PowerPoint 并创建新演示文稿",
+      "OpenDoc": "打开演示文稿",
+      "OpenDocSub": "打开最近的演示文稿",
+      "WordRecentPage": "最近演示文稿"
+    }
+  },
+  "zh-TW": {
+    "OfficePlusPage": { "Item1": "！！！注意：此擴充功能為非微軟官方擴充！！！" },
+    "WordPage": {
+      "CreateNewDoc": "建立新文件",
+      "CreateNewDocSub": "開啟 Microsoft Word 並建立新文件",
+      "OpenDoc": "開啟文件",
+      "OpenDocSub": "開啟最近的文件",
+      "WordRecentPage": "最近的文件"
+    },
+    "ExcelPage": {
+      "CreateNewDoc": "建立新活頁簿",
+      "CreateNewDocSub": "開啟 Microsoft Excel 並建立新活頁簿",
+      "OpenDoc": "開啟活頁簿",
+      "OpenDocSub": "開啟最近的活頁簿",
+      "WordRecentPage": "最近的活頁簿"
+    },
+    "PowerPointPage": {
+      "CreateNewDoc": "建立新簡報",
+      "CreateNewDocSub": "開啟 Microsoft PowerPoint 並建立新簡報",
+      "OpenDoc": "開啟簡報",
+      "OpenDocSub": "開啟最近的簡報",
+      "WordRecentPage": "最近的簡報"
+    }
+  },
+  "zh-HK": {
+    "OfficePlusPage": { "Item1": "！！！注意：此擴充功能為非微軟官方擴充！！！" },
+    "WordPage": {
+      "CreateNewDoc": "建立新文件",
+      "CreateNewDocSub": "開啟 Microsoft Word 並建立新文件",
+      "OpenDoc": "開啟文件",
+      "OpenDocSub": "開啟最近的文件",
+      "WordRecentPage": "最近的文件"
+    },
+    "ExcelPage": {
+      "CreateNewDoc": "建立新工作簿",
+      "CreateNewDocSub": "開啟 Microsoft Excel 並建立新工作簿",
+      "OpenDoc": "開啟工作簿",
+      "OpenDocSub": "開啟最近的工作簿",
+      "WordRecentPage": "最近的工作簿"
+    },
+    "PowerPointPage": {
+      "CreateNewDoc": "建立新演示文稿",
+      "CreateNewDocSub": "開啟 Microsoft PowerPoint 並建立新演示文稿",
+      "OpenDoc": "開啟演示文稿",
+      "OpenDocSub": "開啟最近的演示文稿",
+      "WordRecentPage": "最近的演示文稿"
+    }
+  },
+  "fr-FR": {
+    "OfficePlusPage": { "Item1": "AVERTISSEMENT : ceci est une extension non officielle pour Microsoft Office" },
+    "WordPage": {
+      "CreateNewDoc": "Créer un document",
+      "CreateNewDocSub": "Ouvrir Word et créer un nouveau document",
+      "OpenDoc": "Ouvrir un document",
+      "OpenDocSub": "Ouvrir un document récent",
+      "WordRecentPage": "Documents récents"
+    },
+    "ExcelPage": {
+      "CreateNewDoc": "Créer un classeur",
+      "CreateNewDocSub": "Ouvrir Excel et créer un nouveau classeur",
+      "OpenDoc": "Ouvrir un classeur",
+      "OpenDocSub": "Ouvrir un classeur récent",
+      "WordRecentPage": "Classeurs récents"
+    },
+    "PowerPointPage": {
+      "CreateNewDoc": "Créer une présentation",
+      "CreateNewDocSub": "Ouvrir PowerPoint et créer une présentation",
+      "OpenDoc": "Ouvrir une présentation",
+      "OpenDocSub": "Ouvrir une présentation récente",
+      "WordRecentPage": "Présentations récentes"
+    }
+  },
+  "de-DE": {
+    "OfficePlusPage": { "Item1": "WARNUNG: Dies ist ein inoffizielles Plugin für Microsoft Office" },
+    "WordPage": {
+      "CreateNewDoc": "Neues Dokument erstellen",
+      "CreateNewDocSub": "Word öffnen und ein neues Dokument erstellen",
+      "OpenDoc": "Dokument öffnen",
+      "OpenDocSub": "Zuletzt verwendetes Dokument öffnen",
+      "WordRecentPage": "Zuletzt verwendete Dokumente"
+    },
+    "ExcelPage": {
+      "CreateNewDoc": "Neue Arbeitsmappe erstellen",
+      "CreateNewDocSub": "Excel öffnen und eine neue Arbeitsmappe erstellen",
+      "OpenDoc": "Arbeitsmappe öffnen",
+      "OpenDocSub": "Zuletzt verwendete Arbeitsmappe öffnen",
+      "WordRecentPage": "Zuletzt verwendete Arbeitsmappen"
+    },
+    "PowerPointPage": {
+      "CreateNewDoc": "Neue Präsentation erstellen",
+      "CreateNewDocSub": "PowerPoint öffnen und eine neue Präsentation erstellen",
+      "OpenDoc": "Präsentation öffnen",
+      "OpenDocSub": "Zuletzt verwendete Präsentation öffnen",
+      "WordRecentPage": "Zuletzt verwendete Präsentationen"
+    }
+  },
+  "ja-JP": {
+    "OfficePlusPage": { "Item1": "警告：これはMicrosoft Officeの非公式プラグインです" },
+    "WordPage": {
+      "CreateNewDoc": "新規ドキュメント作成",
+      "CreateNewDocSub": "Wordを開いて新しいドキュメントを作成",
+      "OpenDoc": "ドキュメントを開く",
+      "OpenDocSub": "最近のドキュメントを開く",
+      "WordRecentPage": "最近のドキュメント"
+    },
+    "ExcelPage": {
+      "CreateNewDoc": "新規ブック作成",
+      "CreateNewDocSub": "Excelを開いて新しいブックを作成",
+      "OpenDoc": "ブックを開く",
+      "OpenDocSub": "最近のブックを開く",
+      "WordRecentPage": "最近のブック"
+    },
+    "PowerPointPage": {
+      "CreateNewDoc": "新規プレゼンテーション作成",
+      "CreateNewDocSub": "PowerPointを開いて新しいプレゼンテーションを作成",
+      "OpenDoc": "プレゼンテーションを開く",
+      "OpenDocSub": "最近のプレゼンテーションを開く",
+      "WordRecentPage": "最近のプレゼンテーション"
+    }
+  },
+  "es-ES": {
+    "OfficePlusPage": { "Item1": "ADVERTENCIA: esta es una extensión no oficial para Microsoft Office" },
+    "WordPage": {
+      "CreateNewDoc": "Crear nuevo documento",
+      "CreateNewDocSub": "Abrir Word y crear un nuevo documento",
+      "OpenDoc": "Abrir documento",
+      "OpenDocSub": "Abrir documento reciente",
+      "WordRecentPage": "Documentos recientes"
+    },
+    "ExcelPage": {
+      "CreateNewDoc": "Crear nuevo libro",
+      "CreateNewDocSub": "Abrir Excel y crear un nuevo libro",
+      "OpenDoc": "Abrir libro",
+      "OpenDocSub": "Abrir libro reciente",
+      "WordRecentPage": "Libros recientes"
+    },
+    "PowerPointPage": {
+      "CreateNewDoc": "Crear nueva presentación",
+      "CreateNewDocSub": "Abrir PowerPoint y crear una presentación",
+      "OpenDoc": "Abrir presentación",
+      "OpenDocSub": "Abrir presentación reciente",
+      "WordRecentPage": "Presentaciones recientes"
+    }
+  }
+}
