@@ -82,7 +82,7 @@
     <ILLinkTreatWarningsAsErrors>true</ILLinkTreatWarningsAsErrors>
     <DefaultLanguage>zh-Hans</DefaultLanguage>
     <!-- Add my info -->
-    <AppxPackageIdentityName>EthanYan.12212EF86A98</AppxPackageIdentityName>
+    <AppxPackageIdentityName>EthanYan.OfficePlusExtensionforCommandPalette</AppxPackageIdentityName>
     <AppxPackagePublisher>CN=28366248-4867-41FB-8408-2387CA3809DB</AppxPackagePublisher>
     <AppxPackageVersion>0.0.1.0</AppxPackageVersion>
     <AppxPackageSigningEnabled>false</AppxPackageSigningEnabled>
