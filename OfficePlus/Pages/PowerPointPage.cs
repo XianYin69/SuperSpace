@@ -7,6 +7,8 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
+using OfficePlus.Pages.i18n;
+using static OfficePlus.Pages.i18n.i18n;
 
 namespace OfficePlus.Pages;
 
@@ -24,14 +26,14 @@ internal sealed partial class PowerPointPage : ListPage
         {
             new ListItem(new RunPowerPointCommand("POWERPNT.EXE"))
             {
-                Title = "新建演示文稿",
-                Subtitle = "启动PowerPoint并创建新演示文稿",
+                Title = T("PowerPointPage.CreateNewDoc"),
+                Subtitle = T("PowerPointPage.CreateNewDocSub"),
                 Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocumentAdd48.png")
             },
             new ListItem(new PowerPointRecentPage())
             {
-                Title = "打开演示文稿",
-                Subtitle = "打开最近使用的PowerPoint演示文稿",
+                Title = T("PowerPointPage.OpenDoc"),
+                Subtitle = T("PowerPointPage.OpenDocSub"),
                 Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocumentEdit24.png")
             }
         };
@@ -78,7 +80,7 @@ internal sealed partial class PowerPointRecentPage : ListPage
 
     public PowerPointRecentPage()
     {
-        Title = "最近的 PowerPoint 文档";
+        Title = T("PowerPointPage.WordRecentPage");
         Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocumentEdit24.png");
     }
 
@@ -112,7 +114,7 @@ internal sealed partial class PowerPointRecentPage : ListPage
                     items.Add(new ListItem(new RunPowerPointCommand(file.FullName))
                     {
                         Title = displayName,
-                        Subtitle = $"上次修改: {file.LastWriteTime.ToShortDateString()}",
+                        Subtitle = T("PowerPointPage.LaterEdit", file.LastWriteTime.ToShortDateString()),
                         Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocument48.png")
                     });
                 }
@@ -120,12 +122,12 @@ internal sealed partial class PowerPointRecentPage : ListPage
 
             if (items.Count == 0)
             {
-                items.Add(new ListItem(new NoOpCommand()) { Title = "未发现最近的 PowerPoint 文件" });
+                items.Add(new ListItem(new NoOpCommand()) { Title = T("PowerPointPage.CantFindFile") });
             }
         }
         catch (Exception ex)
         {
-            items.Add(new ListItem(new NoOpCommand()) { Title = $"读取失败: {ex.Message}" });
+            items.Add(new ListItem(new NoOpCommand()) { Title = T("PowerPointPage.ReadError", ex.Message) });
         }
 
         return items.ToArray();

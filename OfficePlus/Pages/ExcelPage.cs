@@ -6,6 +6,8 @@ using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using OfficePlus.Pages.i18n;
+using static OfficePlus.Pages.i18n.i18n;
 
 namespace OfficePlus.Pages;
 
@@ -23,14 +25,14 @@ internal sealed partial class ExcelPage : ListPage
         {
             new ListItem(new RunExcelCommand("EXCEL.EXE"))
             {
-                Title = "新建工作表",
-                Subtitle = "启动Excel并新建工作表",
+                Title = T("ExcelPage.CreateNewDoc"),
+                Subtitle = T("ExcelPage.CreateNewDocSub"),
                 Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocumentAdd48.png"),
             },
             new ListItem(new ExcelRecentPage())
             {
-                Title = "打开工作表",
-                Subtitle = "打开最近使用的Excel工作表",
+                Title = T("ExcelPage.OpenDoc"),
+                Subtitle = T("ExcelPage.OpenDocSub"),
                 Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocumentEdit24.png"),
             }
         };
@@ -74,7 +76,7 @@ internal sealed partial class ExcelRecentPage :　ListPage
     };
     public ExcelRecentPage()
     {
-        Title = "最近的 Excel 文档";
+        Title = T("ExcelPage.WordRecentPage");
         Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocumentEdit24.png");
     }
     public override IListItem[] GetItems()
@@ -103,19 +105,19 @@ internal sealed partial class ExcelRecentPage :　ListPage
                     items.Add(new ListItem(new RunExcelCommand(file.FullName))
                     {
                         Title = DisplayName,
-                        Subtitle = $"上次修改: {file.LastWriteTime.ToShortDateString()}",
+                        Subtitle = T("LaterEdit", file.LastWriteTime.ToShortDateString()),
                         Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocument48.png")
                     });
                 }
             }
             if (items.Count == 0)
             {
-                items.Add(new ListItem(new NoOpCommand()) { Title = "未发现最近的 Excel 文档 " });
+                items.Add(new ListItem(new NoOpCommand()) { Title = T("ExcelPage.CantFindFile") });
             }
         }
         catch (Exception ex)
         {
-            items.Add(new ListItem(new NoOpCommand()) { Title = $"读取失败： {ex.Message}" });
+            items.Add(new ListItem(new NoOpCommand()) { Title = T("ExcelPage.ReadError", ex.Message) });
         }
         return items.ToArray();
     }

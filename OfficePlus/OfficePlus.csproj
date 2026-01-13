@@ -51,6 +51,11 @@
   <ItemGroup>
     <Content Include="Assets\**\*.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Update="Languages.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <Target Name="PrepareAssets" BeforeTargets="BeforeBuild">
     <!-- Copy scale-specific assets to base filenames expected by store validations -->
     <Copy SourceFiles="$(MSBuildProjectDirectory)\Assets\Square150x150Logo.scale-200.png" DestinationFiles="$(MSBuildProjectDirectory)\Assets\Square150x150Logo.png" SkipUnchangedFiles="true" />
