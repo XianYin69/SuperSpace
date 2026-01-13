@@ -7,195 +7,507 @@
     }
   },
   "en-US": {
-    "OfficePlusPage": { "Item1": "WARNING: it is an unofficial plugin for Microsoft Office" },
+    "OfficePlusPage": {
+      "Item1": "WARNING: This is an unofficial plugin for Microsoft Office",
+      "CantFindFile": "Recent files not found: {0}"
+    },
     "WordPage": {
       "CreateNewDoc": "Create New Document",
       "CreateNewDocSub": "Open Microsoft Word and create a new document",
       "OpenDoc": "Open Document",
       "OpenDocSub": "Open recent document",
-      "WordRecentPage": "Recent Documents"
+      "WordRecentPage": "Recent Documents",
+      "LaterEdit": "Last Edit: {0}",
+      "CantFindFile": "Can't find the file",
+      "ReadError": "Can't read: {0}"
     },
     "ExcelPage": {
       "CreateNewDoc": "Create New Workbook",
       "CreateNewDocSub": "Open Microsoft Excel and create a new workbook",
       "OpenDoc": "Open Workbook",
       "OpenDocSub": "Open recent workbook",
-      "WordRecentPage": "Recent Workbooks"
+      "WordRecentPage": "Recent Workbooks",
+      "LaterEdit": "Last Edit: {0}",
+      "CantFindFile": "Can't find the file",
+      "ReadError": "Can't read: {0}"
     },
     "PowerPointPage": {
       "CreateNewDoc": "Create New Presentation",
       "CreateNewDocSub": "Open Microsoft PowerPoint and create a new presentation",
       "OpenDoc": "Open Presentation",
       "OpenDocSub": "Open recent presentation",
-      "WordRecentPage": "Recent Presentations"
+      "WordRecentPage": "Recent Presentations",
+      "LaterEdit": "Last Edit: {0}",
+      "CantFindFile": "Can't find the file",
+      "ReadError": "Can't read: {0}"
     }
   },
   "zh-CN": {
-    "OfficePlusPage": { "Item1": "！！！注意：此扩展为非微软官方扩展！！！" },
+    "OfficePlusPage": {
+      "Item1": "！！！注意：此扩展为非微软官方扩展！！！",
+      "CantFindFile": "未找到最近文件：{0}"
+    },
     "WordPage": {
       "CreateNewDoc": "创建新文档",
       "CreateNewDocSub": "打开 Microsoft Word 并创建新文档",
       "OpenDoc": "打开文档",
       "OpenDocSub": "打开最近的文档",
-      "WordRecentPage": "最近文档"
+      "WordRecentPage": "最近文档",
+      "LaterEdit": "上次编辑：{0}",
+      "CantFindFile": "找不到该文件",
+      "ReadError": "无法读取：{0}"
     },
     "ExcelPage": {
       "CreateNewDoc": "创建新工作簿",
       "CreateNewDocSub": "打开 Microsoft Excel 并创建新工作簿",
       "OpenDoc": "打开工作簿",
       "OpenDocSub": "打开最近的工作簿",
-      "WordRecentPage": "最近工作簿"
+      "WordRecentPage": "最近工作簿",
+      "LaterEdit": "上次编辑：{0}",
+      "CantFindFile": "找不到该文件",
+      "ReadError": "无法读取：{0}"
     },
     "PowerPointPage": {
       "CreateNewDoc": "创建新演示文稿",
       "CreateNewDocSub": "打开 Microsoft PowerPoint 并创建新演示文稿",
       "OpenDoc": "打开演示文稿",
       "OpenDocSub": "打开最近的演示文稿",
-      "WordRecentPage": "最近演示文稿"
+      "WordRecentPage": "最近演示文稿",
+      "LaterEdit": "上次编辑：{0}",
+      "CantFindFile": "找不到该文件",
+      "ReadError": "无法读取：{0}"
     }
   },
   "zh-TW": {
-    "OfficePlusPage": { "Item1": "！！！注意：此擴充功能為非微軟官方擴充！！！" },
+    "OfficePlusPage": {
+      "Item1": "！！！注意：此擴充功能為非微軟官方擴充！！！",
+      "CantFindFile": "找不到最近的檔案：{0}"
+    },
     "WordPage": {
       "CreateNewDoc": "建立新文件",
       "CreateNewDocSub": "開啟 Microsoft Word 並建立新文件",
       "OpenDoc": "開啟文件",
       "OpenDocSub": "開啟最近的文件",
-      "WordRecentPage": "最近的文件"
+      "WordRecentPage": "最近的文件",
+      "LaterEdit": "上次編輯：{0}",
+      "CantFindFile": "找不到該檔案",
+      "ReadError": "無法讀取：{0}"
     },
     "ExcelPage": {
       "CreateNewDoc": "建立新活頁簿",
       "CreateNewDocSub": "開啟 Microsoft Excel 並建立新活頁簿",
       "OpenDoc": "開啟活頁簿",
       "OpenDocSub": "開啟最近的活頁簿",
-      "WordRecentPage": "最近的活頁簿"
+      "WordRecentPage": "最近的活頁簿",
+      "LaterEdit": "上次編輯：{0}",
+      "CantFindFile": "找不到該檔案",
+      "ReadError": "無法讀取：{0}"
     },
     "PowerPointPage": {
       "CreateNewDoc": "建立新簡報",
       "CreateNewDocSub": "開啟 Microsoft PowerPoint 並建立新簡報",
       "OpenDoc": "開啟簡報",
       "OpenDocSub": "開啟最近的簡報",
-      "WordRecentPage": "最近的簡報"
+      "WordRecentPage": "最近的簡報",
+      "LaterEdit": "上次編輯：{0}",
+      "CantFindFile": "找不到該檔案",
+      "ReadError": "無法讀取：{0}"
     }
   },
   "zh-HK": {
-    "OfficePlusPage": { "Item1": "！！！注意：此擴充功能為非微軟官方擴充！！！" },
+    "OfficePlusPage": {
+      "Item1": "！！！注意：此擴充功能為非微軟官方擴充！！！",
+      "CantFindFile": "找不到最近的文件：{0}"
+    },
     "WordPage": {
       "CreateNewDoc": "建立新文件",
       "CreateNewDocSub": "開啟 Microsoft Word 並建立新文件",
       "OpenDoc": "開啟文件",
       "OpenDocSub": "開啟最近的文件",
-      "WordRecentPage": "最近的文件"
+      "WordRecentPage": "最近的文件",
+      "LaterEdit": "上次編輯：{0}",
+      "CantFindFile": "找不到該文件",
+      "ReadError": "無法讀取：{0}"
     },
     "ExcelPage": {
       "CreateNewDoc": "建立新工作簿",
       "CreateNewDocSub": "開啟 Microsoft Excel 並建立新工作簿",
       "OpenDoc": "開啟工作簿",
       "OpenDocSub": "開啟最近的工作簿",
-      "WordRecentPage": "最近的工作簿"
+      "WordRecentPage": "最近的工作簿",
+      "LaterEdit": "上次編輯：{0}",
+      "CantFindFile": "找不到該文件",
+      "ReadError": "無法讀取：{0}"
     },
     "PowerPointPage": {
       "CreateNewDoc": "建立新演示文稿",
       "CreateNewDocSub": "開啟 Microsoft PowerPoint 並建立新演示文稿",
       "OpenDoc": "開啟演示文稿",
       "OpenDocSub": "開啟最近的演示文稿",
-      "WordRecentPage": "最近的演示文稿"
+      "WordRecentPage": "最近的演示文稿",
+      "LaterEdit": "上次編輯：{0}",
+      "CantFindFile": "找不到該文件",
+      "ReadError": "無法讀取：{0}"
     }
   },
   "fr-FR": {
-    "OfficePlusPage": { "Item1": "AVERTISSEMENT : ceci est une extension non officielle pour Microsoft Office" },
+    "OfficePlusPage": {
+      "Item1": "AVERTISSEMENT : ceci est une extension non officielle pour Microsoft Office",
+      "CantFindFile": "Fichiers récents non trouvés : {0}"
+    },
     "WordPage": {
       "CreateNewDoc": "Créer un document",
       "CreateNewDocSub": "Ouvrir Word et créer un nouveau document",
       "OpenDoc": "Ouvrir un document",
       "OpenDocSub": "Ouvrir un document récent",
-      "WordRecentPage": "Documents récents"
+      "WordRecentPage": "Documents récents",
+      "LaterEdit": "Dernière modification : {0}",
+      "CantFindFile": "Impossible de trouver le fichier",
+      "ReadError": "Échec de lecture : {0}"
     },
     "ExcelPage": {
       "CreateNewDoc": "Créer un classeur",
       "CreateNewDocSub": "Ouvrir Excel et créer un nouveau classeur",
       "OpenDoc": "Ouvrir un classeur",
       "OpenDocSub": "Ouvrir un classeur récent",
-      "WordRecentPage": "Classeurs récents"
+      "WordRecentPage": "Classeurs récents",
+      "LaterEdit": "Dernière modification : {0}",
+      "CantFindFile": "Impossible de trouver le fichier",
+      "ReadError": "Échec de lecture : {0}"
     },
     "PowerPointPage": {
       "CreateNewDoc": "Créer une présentation",
       "CreateNewDocSub": "Ouvrir PowerPoint et créer une présentation",
       "OpenDoc": "Ouvrir une présentation",
       "OpenDocSub": "Ouvrir une présentation récente",
-      "WordRecentPage": "Présentations récentes"
+      "WordRecentPage": "Présentations récentes",
+      "LaterEdit": "Dernière modification : {0}",
+      "CantFindFile": "Impossible de trouver le fichier",
+      "ReadError": "Échec de lecture : {0}"
     }
   },
   "de-DE": {
-    "OfficePlusPage": { "Item1": "WARNUNG: Dies ist ein inoffizielles Plugin für Microsoft Office" },
+    "OfficePlusPage": {
+      "Item1": "WARNUNG: Dies ist ein inoffizielles Plugin für Microsoft Office",
+      "CantFindFile": "Zuletzt verwendete Dateien nicht gefunden: {0}"
+    },
     "WordPage": {
       "CreateNewDoc": "Neues Dokument erstellen",
       "CreateNewDocSub": "Word öffnen und ein neues Dokument erstellen",
       "OpenDoc": "Dokument öffnen",
       "OpenDocSub": "Zuletzt verwendetes Dokument öffnen",
-      "WordRecentPage": "Zuletzt verwendete Dokumente"
+      "WordRecentPage": "Zuletzt verwendete Dokumente",
+      "LaterEdit": "Zuletzt bearbeitet: {0}",
+      "CantFindFile": "Datei nicht gefunden",
+      "ReadError": "Lesefehler: {0}"
     },
     "ExcelPage": {
       "CreateNewDoc": "Neue Arbeitsmappe erstellen",
       "CreateNewDocSub": "Excel öffnen und eine neue Arbeitsmappe erstellen",
       "OpenDoc": "Arbeitsmappe öffnen",
       "OpenDocSub": "Zuletzt verwendete Arbeitsmappe öffnen",
-      "WordRecentPage": "Zuletzt verwendete Arbeitsmappen"
+      "WordRecentPage": "Zuletzt verwendete Arbeitsmappen",
+      "LaterEdit": "Zuletzt bearbeitet: {0}",
+      "CantFindFile": "Datei nicht gefunden",
+      "ReadError": "Lesefehler: {0}"
     },
     "PowerPointPage": {
       "CreateNewDoc": "Neue Präsentation erstellen",
       "CreateNewDocSub": "PowerPoint öffnen und eine neue Präsentation erstellen",
       "OpenDoc": "Präsentation öffnen",
       "OpenDocSub": "Zuletzt verwendete Präsentation öffnen",
-      "WordRecentPage": "Zuletzt verwendete Präsentationen"
+      "WordRecentPage": "Zuletzt verwendete Präsentationen",
+      "LaterEdit": "Zuletzt bearbeitet: {0}",
+      "CantFindFile": "Datei nicht gefunden",
+      "ReadError": "Lesefehler: {0}"
     }
   },
   "ja-JP": {
-    "OfficePlusPage": { "Item1": "警告：これはMicrosoft Officeの非公式プラグインです" },
+    "OfficePlusPage": {
+      "Item1": "警告：これはMicrosoft Officeの非公式プラグインです",
+      "CantFindFile": "最近のファイルが見つかりません：{0}"
+    },
     "WordPage": {
       "CreateNewDoc": "新規ドキュメント作成",
       "CreateNewDocSub": "Wordを開いて新しいドキュメントを作成",
       "OpenDoc": "ドキュメントを開く",
       "OpenDocSub": "最近のドキュメントを開く",
-      "WordRecentPage": "最近のドキュメント"
+      "WordRecentPage": "最近のドキュメント",
+      "LaterEdit": "最終編集：{0}",
+      "CantFindFile": "ファイルが見つかりません",
+      "ReadError": "読み込みエラー：{0}"
     },
     "ExcelPage": {
       "CreateNewDoc": "新規ブック作成",
       "CreateNewDocSub": "Excelを開いて新しいブックを作成",
       "OpenDoc": "ブックを開く",
       "OpenDocSub": "最近のブックを開く",
-      "WordRecentPage": "最近のブック"
+      "WordRecentPage": "最近のブック",
+      "LaterEdit": "最終編集：{0}",
+      "CantFindFile": "ファイルが見つかりません",
+      "ReadError": "読み込みエラー：{0}"
     },
     "PowerPointPage": {
       "CreateNewDoc": "新規プレゼンテーション作成",
       "CreateNewDocSub": "PowerPointを開いて新しいプレゼンテーションを作成",
       "OpenDoc": "プレゼンテーションを開く",
       "OpenDocSub": "最近のプレゼンテーションを開く",
-      "WordRecentPage": "最近のプレゼンテーション"
+      "WordRecentPage": "最近のプレゼンテーション",
+      "LaterEdit": "最終編集：{0}",
+      "CantFindFile": "ファイルが見つかりません",
+      "ReadError": "読み込みエラー：{0}"
     }
   },
   "es-ES": {
-    "OfficePlusPage": { "Item1": "ADVERTENCIA: esta es una extensión no oficial para Microsoft Office" },
+    "OfficePlusPage": {
+      "Item1": "ADVERTENCIA: esta es una extensión no oficial para Microsoft Office",
+      "CantFindFile": "No se encontraron archivos recientes: {0}"
+    },
     "WordPage": {
       "CreateNewDoc": "Crear nuevo documento",
       "CreateNewDocSub": "Abrir Word y crear un nuevo documento",
       "OpenDoc": "Abrir documento",
       "OpenDocSub": "Abrir documento reciente",
-      "WordRecentPage": "Documentos recientes"
+      "WordRecentPage": "Documentos recientes",
+      "LaterEdit": "Última edición: {0}",
+      "CantFindFile": "No se encuentra el archivo",
+      "ReadError": "Error de lectura: {0}"
     },
     "ExcelPage": {
       "CreateNewDoc": "Crear nuevo libro",
       "CreateNewDocSub": "Abrir Excel y crear un nuevo libro",
       "OpenDoc": "Abrir libro",
       "OpenDocSub": "Abrir libro reciente",
-      "WordRecentPage": "Libros recientes"
+      "WordRecentPage": "Libros recientes",
+      "LaterEdit": "Última edición: {0}",
+      "CantFindFile": "No se encuentra el archivo",
+      "ReadError": "Error de lectura: {0}"
     },
     "PowerPointPage": {
       "CreateNewDoc": "Crear nueva presentación",
       "CreateNewDocSub": "Abrir PowerPoint y crear una presentación",
       "OpenDoc": "Abrir presentación",
       "OpenDocSub": "Abrir presentación reciente",
-      "WordRecentPage": "Presentaciones recientes"
+      "WordRecentPage": "Presentaciones recientes",
+      "LaterEdit": "Última edición: {0}",
+      "CantFindFile": "No se encuentra el archivo",
+      "ReadError": "Error de lectura: {0}"
+    }
+  },
+  "ru-RU": {
+    "OfficePlusPage": {
+      "Item1": "ВНИМАНИЕ: Это неофициальное расширение для Microsoft Office",
+      "CantFindFile": "Недавние файлы не найдены: {0}"
+    },
+    "WordPage": {
+      "CreateNewDoc": "Создать документ",
+      "CreateNewDocSub": "Открыть Word и создать новый документ",
+      "OpenDoc": "Открыть документ",
+      "OpenDocSub": "Открыть недавний документ",
+      "WordRecentPage": "Недавние документы",
+      "LaterEdit": "Изменено: {0}",
+      "CantFindFile": "Файл не найден",
+      "ReadError": "Ошибка чтения: {0}"
+    },
+    "ExcelPage": {
+      "CreateNewDoc": "Создать книгу",
+      "CreateNewDocSub": "Открыть Excel и создать новую книгу",
+      "OpenDoc": "Открыть книгу",
+      "OpenDocSub": "Открыть недавнюю книгу",
+      "WordRecentPage": "Недавние книги",
+      "LaterEdit": "Изменено: {0}",
+      "CantFindFile": "Файл не найден",
+      "ReadError": "Ошибка чтения: {0}"
+    },
+    "PowerPointPage": {
+      "CreateNewDoc": "Создать презентацию",
+      "CreateNewDocSub": "Открыть PowerPoint и создать презентацию",
+      "OpenDoc": "Открыть презентацию",
+      "OpenDocSub": "Открыть недавнюю презентацию",
+      "WordRecentPage": "Недавние презентации",
+      "LaterEdit": "Изменено: {0}",
+      "CantFindFile": "Файл не найден",
+      "ReadError": "Ошибка чтения: {0}"
+    }
+  },
+  "ko-KR": {
+    "OfficePlusPage": {
+      "Item1": "경고: 이 확장 프로그램은 Microsoft 공식 프로그램이 아닙니다",
+      "CantFindFile": "최근 파일을 찾을 수 없습니다: {0}"
+    },
+    "WordPage": {
+      "CreateNewDoc": "새 문서 만들기",
+      "CreateNewDocSub": "Word를 열고 새 문서를 만듭니다",
+      "OpenDoc": "문서 열기",
+      "OpenDocSub": "최근 문서 열기",
+      "WordRecentPage": "최근 문서",
+      "LaterEdit": "마지막 수정: {0}",
+      "CantFindFile": "파일을 찾을 수 없습니다",
+      "ReadError": "읽기 오류: {0}"
+    },
+    "ExcelPage": {
+      "CreateNewDoc": "새 통합 문서 만들기",
+      "CreateNewDocSub": "Excel을 열고 새 통합 문서를 만듭니다",
+      "OpenDoc": "통합 문서 열기",
+      "OpenDocSub": "최근 통합 문서 열기",
+      "WordRecentPage": "최근 통합 문서",
+      "LaterEdit": "마지막 수정: {0}",
+      "CantFindFile": "파일을 찾을 수 없습니다",
+      "ReadError": "읽기 오류: {0}"
+    },
+    "PowerPointPage": {
+      "CreateNewDoc": "새 프레젠테이션 만들기",
+      "CreateNewDocSub": "PowerPoint를 열고 새 프레젠테이션을 만듭니다",
+      "OpenDoc": "프레젠테이션 열기",
+      "OpenDocSub": "최근 프레젠테이션 열기",
+      "WordRecentPage": "최근 프레젠테이션",
+      "LaterEdit": "마지막 수정: {0}",
+      "CantFindFile": "파일을 찾을 수 없습니다",
+      "ReadError": "읽기 오류: {0}"
+    }
+  },
+  "ar-SA": {
+    "OfficePlusPage": {
+      "Item1": "تنبيه: هذا ملحق غير رسمي لـ Microsoft Office",
+      "CantFindFile": "لم يتم العثور على الملفات الأخيرة: {0}"
+    },
+    "WordPage": {
+      "CreateNewDoc": "إنشاء مستند جديد",
+      "CreateNewDocSub": "فتح Word وإنشاء مستند جديد",
+      "OpenDoc": "فتح مستند",
+      "OpenDocSub": "فتح مستند حديث",
+      "WordRecentPage": "المستندات الأخيرة",
+      "LaterEdit": "آخر تعديل: {0}",
+      "CantFindFile": "تعذر العثور على الملف",
+      "ReadError": "تعذر القراءة: {0}"
+    },
+    "ExcelPage": {
+      "CreateNewDoc": "إنشاء مصنف جديد",
+      "CreateNewDocSub": "فتح Excel وإنشاء مصنف جديد",
+      "OpenDoc": "فتح مصنف",
+      "OpenDocSub": "فتح مصنف حديث",
+      "WordRecentPage": "المصنفات الأخيرة",
+      "LaterEdit": "آخر تعديل: {0}",
+      "CantFindFile": "تعذر العثور على الملف",
+      "ReadError": "تعذر القراءة: {0}"
+    },
+    "PowerPointPage": {
+      "CreateNewDoc": "إنشاء عرض تقديمي جديد",
+      "CreateNewDocSub": "فتح PowerPoint وإنشاء عرض تقديمي جديد",
+      "OpenDoc": "فتح عرض تقديمي",
+      "OpenDocSub": "فتح عرض تقديمي حديث",
+      "WordRecentPage": "العروض التقديمية الأخيرة",
+      "LaterEdit": "آخر تعديل: {0}",
+      "CantFindFile": "تعذر العثور على الملف",
+      "ReadError": "تعذر القراءة: {0}"
+    }
+  },
+  "vi-VN": {
+    "OfficePlusPage": {
+      "Item1": "CẢNH BÁO: Đây là tiện ích mở rộng không chính thức",
+      "CantFindFile": "Không tìm thấy tệp gần đây: {0}"
+    },
+    "WordPage": {
+      "CreateNewDoc": "Tạo tài liệu mới",
+      "CreateNewDocSub": "Mở Word và tạo tài liệu mới",
+      "OpenDoc": "Mở tài liệu",
+      "OpenDocSub": "Mở tài liệu gần đây",
+      "WordRecentPage": "Tài liệu gần đây",
+      "LaterEdit": "Chỉnh sửa lần cuối: {0}",
+      "CantFindFile": "Không tìm thấy tệp",
+      "ReadError": "Không thể đọc: {0}"
+    },
+    "ExcelPage": {
+      "CreateNewDoc": "Tạo bảng tính mới",
+      "CreateNewDocSub": "Mở Excel và tạo bảng tính mới",
+      "OpenDoc": "Mở bảng tính",
+      "OpenDocSub": "Mở bảng tính gần đây",
+      "WordRecentPage": "Bảng tính gần đây",
+      "LaterEdit": "Chỉnh sửa lần cuối: {0}",
+      "CantFindFile": "Không tìm thấy tệp",
+      "ReadError": "Không thể đọc: {0}"
+    },
+    "PowerPointPage": {
+      "CreateNewDoc": "Tạo bài thuyết trình mới",
+      "CreateNewDocSub": "Mở PowerPoint và tạo bài thuyết trình mới",
+      "OpenDoc": "Mở bài thuyết trình",
+      "OpenDocSub": "Mở bài thuyết trình gần đây",
+      "WordRecentPage": "Bài thuyết trình gần đây",
+      "LaterEdit": "Chỉnh sửa lần cuối: {0}",
+      "CantFindFile": "Không tìm thấy tệp",
+      "ReadError": "Không thể đọc: {0}"
+    }
+  },
+  "id-ID": {
+    "OfficePlusPage": {
+      "Item1": "PERINGATAN: Ini adalah ekstensi tidak resmi",
+      "CantFindFile": "File terbaru tidak ditemukan: {0}"
+    },
+    "WordPage": {
+      "CreateNewDoc": "Buat Dokumen Baru",
+      "CreateNewDocSub": "Buka Word dan buat dokumen baru",
+      "OpenDoc": "Buka Dokumen",
+      "OpenDocSub": "Buka dokumen terbaru",
+      "WordRecentPage": "Dokumen Terbaru",
+      "LaterEdit": "Terakhir Diedit: {0}",
+      "CantFindFile": "File tidak ditemukan",
+      "ReadError": "Tidak dapat membaca: {0}"
+    },
+    "ExcelPage": {
+      "CreateNewDoc": "Buat Buku Kerja Baru",
+      "CreateNewDocSub": "Buka Excel dan buat buku kerja baru",
+      "OpenDoc": "Buka Buku Kerja",
+      "OpenDocSub": "Buka buku kerja terbaru",
+      "WordRecentPage": "Buku Kerja Terbaru",
+      "LaterEdit": "Terakhir Diedit: {0}",
+      "CantFindFile": "File tidak ditemukan",
+      "ReadError": "Tidak dapat membaca: {0}"
+    },
+    "PowerPointPage": {
+      "CreateNewDoc": "Buat Presentasi Baru",
+      "CreateNewDocSub": "Buka PowerPoint dan buat presentasi baru",
+      "OpenDoc": "Buka Presentasi",
+      "OpenDocSub": "Buka presentasi terbaru",
+      "WordRecentPage": "Presentasi Terbaru",
+      "LaterEdit": "Terakhir Diedit: {0}",
+      "CantFindFile": "File tidak ditemukan",
+      "ReadError": "Tidak dapat membaca: {0}"
+    }
+  },
+  "th-TH": {
+    "OfficePlusPage": {
+      "Item1": "คำเตือน: นี่คือส่วนขยายที่ไม่เป็นทางการ",
+      "CantFindFile": "ไม่พบไฟล์ล่าสุด: {0}"
+    },
+    "WordPage": {
+      "CreateNewDoc": "สร้างเอกสารใหม่",
+      "CreateNewDocSub": "เปิด Word และสร้างเอกสารใหม่",
+      "OpenDoc": "เปิดเอกสาร",
+      "OpenDocSub": "เปิดเอกสารล่าสุด",
+      "WordRecentPage": "เอกสารล่าสุด",
+      "LaterEdit": "แก้ไขล่าสุด: {0}",
+      "CantFindFile": "ไม่พบไฟล์",
+      "ReadError": "ไม่สามารถอ่านได้: {0}"
+    },
+    "ExcelPage": {
+      "CreateNewDoc": "สร้างเวิร์กบุ๊กใหม่",
+      "CreateNewDocSub": "เปิด Excel และสร้างเวิร์กบุ๊กใหม่",
+      "OpenDoc": "เปิดเวิร์กบุ๊ก",
+      "OpenDocSub": "เปิดเวิร์กบุ๊กล่าสุด",
+      "WordRecentPage": "เวิร์กบุ๊กล่าสุด",
+      "LaterEdit": "แก้ไขล่าสุด: {0}",
+      "CantFindFile": "ไม่พบไฟล์",
+      "ReadError": "ไม่สามารถอ่านได้: {0}"
+    },
+    "PowerPointPage": {
+      "CreateNewDoc": "สร้างงานนำเสนอใหม่",
+      "CreateNewDocSub": "เปิด PowerPoint และสร้างงานนำเสนอใหม่",
+      "OpenDoc": "เปิดงานนำเสนอ",
+      "OpenDocSub": "เปิดงานนำเสนอล่าสุด",
+      "WordRecentPage": "งานนำเสนอล่าสุด",
+      "LaterEdit": "แก้ไขล่าสุด: {0}",
+      "CantFindFile": "ไม่พบไฟล์",
+      "ReadError": "ไม่สามารถอ่านได้: {0}"
     }
   }
 }

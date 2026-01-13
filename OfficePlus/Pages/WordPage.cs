@@ -1,11 +1,15 @@
 ﻿//It is a new page of office-plus
 using Microsoft.CommandPalette.Extensions;
 using Microsoft.CommandPalette.Extensions.Toolkit;
-using System.Collections.Generic;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Text.Json;
+using OfficePlus.Pages.i18n;
+using static OfficePlus.Pages.i18n.i18n;
 
 namespace OfficePlus.Pages;
 
@@ -23,14 +27,14 @@ internal sealed partial class WordPage : ListPage
         {
             new ListItem(new RunWordCommand("WINWORD.EXE"))
             {
-                Title = "新建文档",
-                Subtitle = "启动Word并新建文档",
+                Title = T("WordPage.CreateNewDoc"),
+                Subtitle = T("WordPage.CreateNewDocSub"),
                 Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocumentAdd48.png"),
             },
             new ListItem(new WordRecentPage())
             {
-                Title = "打开文档",
-                Subtitle = "打开最近使用的Word文档",
+                Title = T("WordPage.OpenDoc"),
+                Subtitle = T("WordPage.OpenDocSub"),
                 Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocumentEdit24.png"),
             }
         };
@@ -74,7 +78,7 @@ internal sealed partial class WordRecentPage : ListPage
     };
     public WordRecentPage()
     {
-        Title = "最近的 Word 文档";
+        Title = T("WordPage.WordRecentPage");
         Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocumentEdit24.png");
     }
     public override IListItem[] GetItems()
@@ -103,19 +107,19 @@ internal sealed partial class WordRecentPage : ListPage
                     items.Add(new ListItem(new RunWordCommand(file.FullName))
                     {
                         Title = DisplayName,
-                        Subtitle = $"上次修改: {file.LastWriteTime.ToShortDateString()}",
+                        Subtitle = T("WordPage.LaterEdit", file.LastWriteTime.ToShortDateString()),
                         Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocument48.png")
                     });
                 }
             }
             if (items.Count == 0)
             {
-                items.Add(new ListItem(new NoOpCommand()) { Title = "未发现最近的 Word 文档 " });
+                items.Add(new ListItem(new NoOpCommand()) { Title = T("WordPage.CantFindFile") });
             }
         }
         catch (Exception ex)
         {
-            items.Add(new ListItem(new NoOpCommand()) { Title = $"读取失败： {ex.Message}" });
+            items.Add(new ListItem(new NoOpCommand()) { Title = T("WordPage.ReadError", ex.Message) });
         }
         return items.ToArray();
     }
