@@ -14,7 +14,7 @@ public partial class OfficePlusCommandsProvider : CommandProvider
 
     public OfficePlusCommandsProvider()
     {
-        DisplayName = "OfficePlus";
+        DisplayName = "SuperSpace";
         Icon = IconHelpers.FromRelativePath("Assets\\StoreLogo.png");
         _commands = new ICommandItem[]
         {
