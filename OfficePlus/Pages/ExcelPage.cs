@@ -39,7 +39,7 @@ internal sealed partial class ExcelPage : ListPage
         return items.ToArray();
     }
 }
-internal sealed class RunExcelCommand :　InvokableCommand
+internal sealed partial class RunExcelCommand :　InvokableCommand
 {
     private readonly string _executable;
     public RunExcelCommand(string executable)

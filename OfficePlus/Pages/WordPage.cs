@@ -41,7 +41,7 @@ internal sealed partial class WordPage : ListPage
         return items.ToArray();
     }
 }
-internal sealed class RunWordCommand : InvokableCommand
+internal sealed partial class RunWordCommand : InvokableCommand
 {
     private readonly string _executable;
     public RunWordCommand(string executable)
