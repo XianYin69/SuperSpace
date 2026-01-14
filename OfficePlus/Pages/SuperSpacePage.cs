@@ -23,7 +23,7 @@ internal sealed partial class OfficePlusPage : ListPage
     public OfficePlusPage()
     {
         Icon = IconHelpers.FromRelativePath("Assets\\OfficePlusPageIcon.png");
-        Title = "OfficePlus";
+        Title = "SuperSpace";
         Name = "Open or create your file";
     }
 
