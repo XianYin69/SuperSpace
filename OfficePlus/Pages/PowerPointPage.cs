@@ -41,7 +41,7 @@ internal sealed partial class PowerPointPage : ListPage
     }
 }
 // Add a starting process class
-internal sealed class RunPowerPointCommand :　InvokableCommand
+internal sealed partial class RunPowerPointCommand :　InvokableCommand
 {
     private readonly string _executable;
     
