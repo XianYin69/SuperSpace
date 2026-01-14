@@ -6,16 +6,16 @@ using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using OfficePlus.Pages.i18n;
-using static OfficePlus.Pages.i18n.i18n;
+using SuperSpace.Pages.i18n;
+using static SuperSpace.Pages.i18n.i18n;
 
-namespace OfficePlus.Pages;
+namespace SuperSpace.Pages;
 
 internal sealed partial class ExcelPage : ListPage
 {
     public ExcelPage()
     {
-        Icon = IconHelpers.FromRelativePath("Assets\\OfficePlusExcelPageIcon.png");
+        Icon = IconHelpers.FromRelativePath("Assets\\SuperSpaceExcelPageIcon.png");
         Title = "Excel";
         Name = "";
     }
@@ -105,7 +105,7 @@ internal sealed partial class ExcelRecentPage :　ListPage
                     items.Add(new ListItem(new RunExcelCommand(file.FullName))
                     {
                         Title = DisplayName,
-                        Subtitle = T("LaterEdit", file.LastWriteTime.ToShortDateString()),
+                        Subtitle = T("ExcelPage.LaterEdit", file.LastWriteTime.ToShortDateString()),
                         Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocument48.png")
                     });
                 }

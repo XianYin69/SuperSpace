@@ -4,21 +4,21 @@
 
 using Microsoft.CommandPalette.Extensions;
 using Microsoft.CommandPalette.Extensions.Toolkit;
-using OfficePlus.Pages;
+using SuperSpace.Pages;
 
-namespace OfficePlus;
+namespace SuperSpace;
 
-public partial class OfficePlusCommandsProvider : CommandProvider
+public partial class SuperSpaceCommandsProvider : CommandProvider
 {
     private readonly ICommandItem[] _commands;
 
-    public OfficePlusCommandsProvider()
+    public SuperSpaceCommandsProvider()
     {
         DisplayName = "SuperSpace";
         Icon = IconHelpers.FromRelativePath("Assets\\StoreLogo.png");
         _commands = new ICommandItem[]
         {
-            new CommandItem(new OfficePlusPage()) { Title = DisplayName },
+            new CommandItem(new SuperSpacePage()) { Title = DisplayName },
         };
     }
 

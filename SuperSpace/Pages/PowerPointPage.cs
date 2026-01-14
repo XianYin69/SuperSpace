@@ -7,16 +7,16 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
-using OfficePlus.Pages.i18n;
-using static OfficePlus.Pages.i18n.i18n;
+using SuperSpace.Pages.i18n;
+using static SuperSpace.Pages.i18n.i18n;
 
-namespace OfficePlus.Pages;
+namespace SuperSpace.Pages;
 
 internal sealed partial class PowerPointPage : ListPage
 {
     public PowerPointPage()
     {
-        Icon = IconHelpers.FromRelativePath("Assets\\OfficePlusPowerPointPageIcon.png");
+        Icon = IconHelpers.FromRelativePath("Assets\\SuperSpacePowerPointPageIcon.png");
         Title = "PowerPoint";
         Name = "";
     }

@@ -7,16 +7,16 @@ using System.Runtime.InteropServices;
 using System.Threading;
 using Microsoft.CommandPalette.Extensions;
 
-namespace OfficePlus;
+namespace SuperSpace;
 
 [Guid("3a6a01f9-65f6-4878-a6fb-6170c4e626fc")]
-public sealed partial class OfficePlus : IExtension, IDisposable
+public sealed partial class SuperSpace : IExtension, IDisposable
 {
     private readonly ManualResetEvent _extensionDisposedEvent;
 
-    private readonly OfficePlusCommandsProvider _provider = new();
+    private readonly SuperSpaceCommandsProvider _provider = new();
 
-    public OfficePlus(ManualResetEvent extensionDisposedEvent)
+    public SuperSpace(ManualResetEvent extensionDisposedEvent)
     {
         this._extensionDisposedEvent = extensionDisposedEvent;
     }
