@@ -11,18 +11,18 @@ using Microsoft.CommandPalette.Extensions;
 using Microsoft.CommandPalette.Extensions.Toolkit;
 using System.Text.Json;
 using System.Globalization;
-using OfficePlus.Pages.i18n;
-using static OfficePlus.Pages.i18n.i18n;
+using SuperSpace.Pages.i18n;
+using static SuperSpace.Pages.i18n.i18n;
 
-namespace OfficePlus.Pages;
+namespace SuperSpace.Pages;
 
-internal sealed partial class OfficePlusPage : ListPage
+internal sealed partial class SuperSpacePage : ListPage
 {
     private const int MaxRecentItems = 20;
 
-    public OfficePlusPage()
+    public SuperSpacePage()
     {
-        Icon = IconHelpers.FromRelativePath("Assets\\OfficePlusPageIcon.png");
+        Icon = IconHelpers.FromRelativePath("Assets\\SuperSpacePageIcon.png");
         Title = "SuperSpace";
         Name = "Open or create your file";
     }
@@ -31,10 +31,10 @@ internal sealed partial class OfficePlusPage : ListPage
     {
         var items = new List<IListItem>
         {
-            new ListItem(new NoOpCommand()) { Title = T("OfficePlusPage.Item1") },
-            new ListItem(new WordPage()) { Title = T("OfficePlusPage.Item2") },
-            new ListItem(new ExcelPage()) { Title = T("OfficePlusPage.Item3") },
-            new ListItem(new PowerPointPage()) { Title = T("OfficePlusPage.Item4") }
+            new ListItem(new NoOpCommand()) { Title = T("SuperSpacePage.Item1") },
+            new ListItem(new WordPage()) { Title = T("SuperSpacePage.Item2") },
+            new ListItem(new ExcelPage()) { Title = T("SuperSpacePage.Item3") },
+            new ListItem(new PowerPointPage()) { Title = T("SuperSpacePage.Item4") }
         };
 
         try
@@ -66,7 +66,7 @@ internal sealed partial class OfficePlusPage : ListPage
         catch (Exception ex)
         {
             // 如果枚举失败，显示错误提示项
-            items.Add(new ListItem(new NoOpCommand()) { Title = T("OfficePlusPage.CantFindFile", ex.Message) });
+            items.Add(new ListItem(new NoOpCommand()) { Title = T("SuperSpacePage.CantFindFile", ex.Message) });
         }
 
         return items.ToArray();

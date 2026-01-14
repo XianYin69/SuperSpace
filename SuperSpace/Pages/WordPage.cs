@@ -8,16 +8,16 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
-using OfficePlus.Pages.i18n;
-using static OfficePlus.Pages.i18n.i18n;
+using SuperSpace.Pages.i18n;
+using static SuperSpace.Pages.i18n.i18n;
 
-namespace OfficePlus.Pages;
+namespace SuperSpace.Pages;
 
 internal sealed partial class WordPage : ListPage
 {
     public WordPage()
     {
-        Icon = IconHelpers.FromRelativePath("Assets\\OfficePlusWordPageIcon.png");
+        Icon = IconHelpers.FromRelativePath("Assets\\SuperSpaceWordPageIcon.png");
         Title = "Word";
         Name = "";
     }

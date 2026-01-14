@@ -6,7 +6,7 @@ using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace OfficePlus.Pages.i18n;
+namespace SuperSpace.Pages.i18n;
 
 // 1. 定义源代码生成器上下文
 [JsonSerializable(typeof(Dictionary<string, JsonElement>))]

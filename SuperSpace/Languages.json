@@ -1,14 +1,15 @@
 {
   "default": {
-    "OfficePlusPage": {
+    "SuperSpacePage": {
+      "Item1": "This is a Command Palette Extension",
       "Item2": "Word",
       "Item3": "Excel",
       "Item4": "PowerPoint"
     }
   },
   "en-US": {
-    "OfficePlusPage": {
-      "Item1": "WARNING: This is an unofficial plugin for Microsoft Office",
+    "SuperSpacePage": {
+      "Item1": "This is a Command Palette Extension",
       "CantFindFile": "Recent files not found: {0}"
     },
     "WordPage": {
@@ -43,8 +44,8 @@
     }
   },
   "zh-CN": {
-    "OfficePlusPage": {
-      "Item1": "！！！注意：此扩展为非微软官方扩展！！！",
+    "SuperSpacePage": {
+      "Item1": "这是一个命令面板扩展",
       "CantFindFile": "未找到最近文件：{0}"
     },
     "WordPage": {
@@ -79,8 +80,8 @@
     }
   },
   "zh-TW": {
-    "OfficePlusPage": {
-      "Item1": "！！！注意：此擴充功能為非微軟官方擴充！！！",
+    "SuperSpacePage": {
+      "Item1": "這是一個命令面板延伸模組",
       "CantFindFile": "找不到最近的檔案：{0}"
     },
     "WordPage": {
@@ -115,8 +116,8 @@
     }
   },
   "zh-HK": {
-    "OfficePlusPage": {
-      "Item1": "！！！注意：此擴充功能為非微軟官方擴充！！！",
+    "SuperSpacePage": {
+      "Item1": "這是一個命令面板延伸模組",
       "CantFindFile": "找不到最近的文件：{0}"
     },
     "WordPage": {
@@ -151,8 +152,8 @@
     }
   },
   "fr-FR": {
-    "OfficePlusPage": {
-      "Item1": "AVERTISSEMENT : ceci est une extension non officielle pour Microsoft Office",
+    "SuperSpacePage": {
+      "Item1": "C'est une extension de palette de commandes",
       "CantFindFile": "Fichiers récents non trouvés : {0}"
     },
     "WordPage": {
@@ -187,8 +188,8 @@
     }
   },
   "de-DE": {
-    "OfficePlusPage": {
-      "Item1": "WARNUNG: Dies ist ein inoffizielles Plugin für Microsoft Office",
+    "SuperSpacePage": {
+      "Item1": "Dies ist eine Befehlspaletten-Erweiterung",
       "CantFindFile": "Zuletzt verwendete Dateien nicht gefunden: {0}"
     },
     "WordPage": {
@@ -223,8 +224,8 @@
     }
   },
   "ja-JP": {
-    "OfficePlusPage": {
-      "Item1": "警告：これはMicrosoft Officeの非公式プラグインです",
+    "SuperSpacePage": {
+      "Item1": "これはコマンドパレットの拡張機能です",
       "CantFindFile": "最近のファイルが見つかりません：{0}"
     },
     "WordPage": {
@@ -259,8 +260,8 @@
     }
   },
   "es-ES": {
-    "OfficePlusPage": {
-      "Item1": "ADVERTENCIA: esta es una extensión no oficial para Microsoft Office",
+    "SuperSpacePage": {
+      "Item1": "Esta es una extensión de la paleta de comandos",
       "CantFindFile": "No se encontraron archivos recientes: {0}"
     },
     "WordPage": {
@@ -295,8 +296,8 @@
     }
   },
   "ru-RU": {
-    "OfficePlusPage": {
-      "Item1": "ВНИМАНИЕ: Это неофициальное расширение для Microsoft Office",
+    "SuperSpacePage": {
+      "Item1": "Это расширение командной палитры",
       "CantFindFile": "Недавние файлы не найдены: {0}"
     },
     "WordPage": {
@@ -331,8 +332,8 @@
     }
   },
   "ko-KR": {
-    "OfficePlusPage": {
-      "Item1": "경고: 이 확장 프로그램은 Microsoft 공식 프로그램이 아닙니다",
+    "SuperSpacePage": {
+      "Item1": "이것은 명령 팔레트 확장 프로그램입니다",
       "CantFindFile": "최근 파일을 찾을 수 없습니다: {0}"
     },
     "WordPage": {
@@ -367,8 +368,8 @@
     }
   },
   "ar-SA": {
-    "OfficePlusPage": {
-      "Item1": "تنبيه: هذا ملحق غير رسمي لـ Microsoft Office",
+    "SuperSpacePage": {
+      "Item1": "هذا ملحق للوحة الأوامر",
       "CantFindFile": "لم يتم العثور على الملفات الأخيرة: {0}"
     },
     "WordPage": {
@@ -403,8 +404,8 @@
     }
   },
   "vi-VN": {
-    "OfficePlusPage": {
-      "Item1": "CẢNH BÁO: Đây là tiện ích mở rộng không chính thức",
+    "SuperSpacePage": {
+      "Item1": "Đây là một tiện ích mở rộng cho bảng lệnh",
       "CantFindFile": "Không tìm thấy tệp gần đây: {0}"
     },
     "WordPage": {
@@ -439,8 +440,8 @@
     }
   },
   "id-ID": {
-    "OfficePlusPage": {
-      "Item1": "PERINGATAN: Ini adalah ekstensi tidak resmi",
+    "SuperSpacePage": {
+      "Item1": "Ini adalah ekstensi palet perintah",
       "CantFindFile": "File terbaru tidak ditemukan: {0}"
     },
     "WordPage": {
@@ -475,8 +476,8 @@
     }
   },
   "th-TH": {
-    "OfficePlusPage": {
-      "Item1": "คำเตือน: นี่คือส่วนขยายที่ไม่เป็นทางการ",
+    "SuperSpacePage": {
+      "Item1": "นี่คือส่วนขยายสำหรับแถบคำสั่ง",
       "CantFindFile": "ไม่พบไฟล์ล่าสุด: {0}"
     },
     "WordPage": {

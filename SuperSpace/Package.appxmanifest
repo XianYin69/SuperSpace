@@ -9,14 +9,14 @@
   IgnorableNamespaces="uap uap3 rescap">
 
   <Identity
-    Name="EthanYan"
+    Name="EthanYan.SuperSpaceforCommandPalette"
     Publisher="CN=28366248-4867-41FB-8408-2387CA3809DB"
-    Version="1.0.0.0" />
+    Version="1.0.1.0" />
   <!-- When you're ready to publish your extension, you'll need to change the
        Publisher= to match your own identity -->
 
   <Properties>
-    <DisplayName>OfficePlus for PowerToys Run</DisplayName>
+    <DisplayName>SuperSpace for Command Palette</DisplayName>
     <PublisherDisplayName>EthanYan</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -26,7 +26,8 @@
   </Dependencies>
 
   <Resources>
-    <Resource Language="x-generate"/>
+    <Resource Language="ZH-HANS" />
+    <Resource Language="EN-US" />
   </Resources>
 
   <Applications>
@@ -34,19 +35,19 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="OfficePlus"
-        Description="OfficePlus"
+        DisplayName="SuperSpace"
+        Description="SuperSpace for Command Palette"
         BackgroundColor="transparent"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"  Square71x71Logo="Assets\SmallTile.png" Square310x310Logo="Assets\LargeTile.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
       <Extensions>
         <com:Extension Category="windows.comServer">
           <com:ComServer>
-            <com:ExeServer Executable="OfficePlus.exe" Arguments="-RegisterProcessAsComServer" DisplayName="OfficePlus">
-              <com:Class Id="3a6a01f9-65f6-4878-a6fb-6170c4e626fc" DisplayName="OfficePlus" />
+            <com:ExeServer Executable="SuperSpace.exe" Arguments="-RegisterProcessAsComServer" DisplayName="SuperSpace">
+              <com:Class Id="3a6a01f9-65f6-4878-a6fb-6170c4e626fc" DisplayName="SuperSpace" />
             </com:ExeServer>
           </com:ComServer>
         </com:Extension>
@@ -54,8 +55,8 @@
           <uap3:AppExtension Name="com.microsoft.commandpalette"
             Id="ID"
             PublicFolder="Public"
-            DisplayName="OfficePlus"
-            Description="OfficePlus">
+            DisplayName="SuperSpace"
+            Description="一个生产力工具">
             <uap3:Properties>
               <CmdPalProvider>
                 <Activation>
