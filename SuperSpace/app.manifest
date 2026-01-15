@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1">
   <assemblyIdentity version="1.0.0.0" name="SuperSpace.app"/>
+  <Identity Name="EthanYan.SuperSpaceforCommandPalette"
+    Version="1.0.0.0"
+    Publisher="CN=28366248-4867-41FB-8408-2387CA3809DB"/>
 
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
     <application>
