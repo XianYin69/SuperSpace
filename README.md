@@ -10,6 +10,10 @@
 ## 介绍
 这是一个PowerToys Command Palette扩展用于创建或打开xlsx, docx, pptx等文件。
 
+## 下载
+-  即刻在 Microsoft Store 下载  
+<img src="./Budget/MicrosoftStore.svg" width="150rem" alt="" href="https://apps.microsoft.com/detail/9NJ4D00C6HBC?hl=zh-hans&gl=TW&ocid=pdpshare"/>
+
 ## 贡献者
 <a href="https://github.com/XianYin69/SuperSpace/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=XianYin69/SuperSpace" width="20rem" alt=""/>

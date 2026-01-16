@@ -1,5 +1,5 @@
 # SuperSpace
-一個PowerToys Command Palette 擴充功能
+一個PowerToys Command Palette 擴充功能。
 
 
 ## 語言
@@ -9,6 +9,10 @@
 
 ## 介紹
 這是一個用於開啓Microsoft Office附屬程式和創建文書、活頁簿和簡報的PowerToys Command Palette 擴充功能。
+
+## 下載
+-  馬上在 Microsoft Store 下載  
+<img src="./Budget/MicrosoftStore.svg" width="150rem" alt="" href="https://apps.microsoft.com/detail/9NJ4D00C6HBC?hl=zh-hans&gl=TW&ocid=pdpshare"/>
 
 ## 貢獻者
 <a href="https://github.com/XianYin69/SuperSpace/graphs/contributors">
