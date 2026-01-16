@@ -11,7 +11,9 @@ SuperSpace is an extension for PowerToys Command Palette designed to facilitate 
 
 ## Download
 -  Get it from Microsoft Right Now  
-<img src="./Budget/MicrosoftStore.svg" width="150rem" alt="" href="https://apps.microsoft.com/detail/9NJ4D00C6HBC?hl=zh-hans&gl=TW&ocid=pdpshare"/>
+<a href="https://apps.microsoft.com/detail/9NJ4D00C6HBC?hl=zh-hans&gl=TW&ocid=pdpshare">
+ <img src="./Budget/MicrosoftStore.svg" width="150rem" alt="" />
+</a>
 
 ## Contibutors
 <a href="https://github.com/XianYin69/SuperSpace/graphs/contributors">

@@ -12,8 +12,9 @@
 
 ## 下载
 -  即刻在 Microsoft Store 下载  
-<img src="./Budget/MicrosoftStore.svg" width="150rem" alt="" href="https://apps.microsoft.com/detail/9NJ4D00C6HBC?hl=zh-hans&gl=TW&ocid=pdpshare"/>
-
+<a href="https://apps.microsoft.com/detail/9NJ4D00C6HBC?hl=zh-hans&gl=TW&ocid=pdpshare">
+ <img src="./Budget/MicrosoftStore.svg" width="150rem" alt="" />
+</a>
 ## 贡献者
 <a href="https://github.com/XianYin69/SuperSpace/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=XianYin69/SuperSpace" width="20rem" alt=""/>
