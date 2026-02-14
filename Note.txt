@@ -1,0 +1,17 @@
+SuperSpace -想法
+目前这个软件只可以用来打开Office，但是我现在使用的一个SteamPanel说实话有一些智障，然后我觉得一些功能是微软官方本身可以做出来的.
+我看我目前提出要加入JetBrain相关套件的支持
+OK
+那么就需要考虑菜单层级了
+SuperSpace---办公
+           |_开发
+           |_游戏
+*一级菜单
+办公---Microsoft Office
+     |_WPS
+     |_open source office suit
+开发---Visual Studio
+     |_JetBrain
+游戏---Steam
+     |_Epic games
+*二级菜单
