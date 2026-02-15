@@ -15,3 +15,30 @@ SuperSpace---办公
 游戏---Steam
      |_Epic games
 *二级菜单
+Microsoft Office---Word
+                 |_PowerPoint
+                 |_Excel
+                 |_最近打开或编辑的文档**
+WPS---文字
+    |_表格
+    |_演示
+    |_最近打开或编辑的文档**
+**：在用户的AppData里
+Visual Studio---Visual Studio Code
+              |_Visual Studio
+JetBrain---CLion
+         |_Pycharm
+         |_WebStrom
+         |_IntelliJ IDEA
+         |_Rust Rover
+         |_Rider
+         |_Toolbox
+         |_GoLand
+         |_DataGrip
+         |_PhpStorm
+Steam---打开steam
+      |_我的游戏**
+EpicGames---打开Epic Games
+          |_我的游戏**
+**:通过扫描游戏库实现  不用打开对应的软件
+*三级菜单
