@@ -52,7 +52,7 @@
     <Content Include="Assets\**\*.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Update="Languages.json">
+    <None Update="Languages_o.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
