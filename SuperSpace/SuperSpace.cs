@@ -6,6 +6,9 @@ using System;
 using System.Runtime.InteropServices;
 using System.Threading;
 using Microsoft.CommandPalette.Extensions;
+using System.Linq;
+using System.Collections.Generic;
+using Microsoft.CommandPalette.Extensions.Toolkit;
 
 namespace SuperSpace;
 
@@ -31,4 +34,9 @@ public sealed partial class SuperSpace : IExtension, IDisposable
     }
 
     public void Dispose() => this._extensionDisposedEvent.Set();
+}
+public class ExtensionSettingPage : IContentPage
+{
+    public string Title => "¿©’π…Ë÷√";
+
 }
