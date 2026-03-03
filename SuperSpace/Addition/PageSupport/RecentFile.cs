@@ -6,10 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SuperSpace.Pages.PageSupport
+namespace SuperSpace.Addition.PageSupport
 {
     internal class RecentFile
     {
+        const int MaxRecentItems = 20;
         try
         {
             string recentDir = Path.Combine(

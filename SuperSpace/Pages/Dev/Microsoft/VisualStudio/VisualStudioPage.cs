@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SuperSpace.Pages.Game
+namespace SuperSpace.Pages.Dev.Microsoft.VisualStudio
 {
-    internal class EpicGamePage
+    internal class VisualStudioPage
     {
     }
 }

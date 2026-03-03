@@ -11,21 +11,18 @@ using Microsoft.CommandPalette.Extensions;
 using Microsoft.CommandPalette.Extensions.Toolkit;
 using System.Text.Json;
 using System.Globalization;
-using SuperSpace.Pages.i18n;
-using static SuperSpace.Pages.i18n.i18n;
-using SuperSpace.Pages.PageSupport;
+using SuperSpace.Addition.i18n;
+using static SuperSpace.Addition.i18n.i18n;
 
 namespace SuperSpace.Pages;
 
 internal sealed partial class SuperSpacePage : ListPage
 {
-    private const int MaxRecentItems = 20;
-
     public SuperSpacePage()
     {
         Icon = IconHelpers.FromRelativePath("Assets\\SuperSpacePageIcon.png");
-        Title = "SuperSpace";
-        Name = "Open or create your file";
+        Title = T("");
+        Name = T("");
     }
 
     public override IListItem[] GetItems()
@@ -51,8 +48,6 @@ internal sealed partial class SuperSpacePage : ListPage
                 Icon = IconHelpers.FromRelativePath("Assets\\FluentColorAdd24.png")
             }
         };
-
-        RecentFile();
         return items.ToArray();
     }
 }
