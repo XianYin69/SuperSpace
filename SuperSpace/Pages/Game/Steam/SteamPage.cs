@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SuperSpace.Pages.Dev.Microsoft
+namespace SuperSpace.Pages.Game.Steam
 {
-    internal class VisualStudioPage
+    internal class SteamPage
     {
     }
 }
