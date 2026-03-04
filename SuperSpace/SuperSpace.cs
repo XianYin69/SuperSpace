@@ -35,8 +35,9 @@ public sealed partial class SuperSpace : IExtension, IDisposable
 
     public void Dispose() => this._extensionDisposedEvent.Set();
 }
-public class ExtensionSettingPage : IContentPage
-{
-    public string Title => "¿©’π…Ë÷√";
 
-}
+/*Define settings*/
+/*Including:
+ *- Set pathes of programs
+ *- Provide icon defining
+ */

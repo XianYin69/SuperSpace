@@ -39,7 +39,9 @@ internal sealed partial class OfficeRootPage : ListPage
                 Subtitle = T("")
             }
         };
-        RecentFile();
+        var recentFiles = new RecentFile("Microsoft", "Office", "Recent", false, "*");
+        items.AddRange(recentFiles.items);
+        return items.ToArray();
     }
 }
 
