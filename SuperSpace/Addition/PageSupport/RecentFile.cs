@@ -17,7 +17,7 @@ namespace SuperSpace.Addition.PageSupport
     {
         const int MaxRecentItems = 20;
         public List<IListItem> items { get; } = new();
-        public RecentFile(string PathSingle_1, string PathSingle_2, string PathSingle_3, bool UseFilter, string SuffixName)
+        public RecentFile(string PathSingle_1, string PathSingle_2, string PathSingle_3, bool UseFilter, List<string> SuffixName)
         {
             try
             {
@@ -61,18 +61,19 @@ namespace SuperSpace.Addition.PageSupport
         }
 
         //Select current file
-        public void FileFilter(string Path , string SuffixName)
+        public void FileFilter(string Path , List<string> SuffixName)
         {
+            var filterList = SuffixName.Select(s => s.StartsWith('.') ? s.ToLower() : "." + s.ToLower()).ToList();
             var files = Directory.GetFiles(Path)
-                .Where(f => System.IO.Path.GetExtension(f).Equals(SuffixName, StringComparison.OrdinalIgnoreCase))
+                .Where(f => filterList.Contains(System.IO.Path.GetExtension(f).ToLower()))
                 .OrderByDescending(f => File.GetLastWriteTimeUtc(f))
                 .Take(MaxRecentItems);
             foreach (var file in files)
             {
                 items.Add(new ListItem(new OpenFileCommand(file))
                 {
-                    Title = T(SuffixName),
-                    Subtitle = T(SuffixName + "_sub")
+                    Title = System.IO.Path.GetFileNameWithoutExtension(file),
+                    Subtitle = T(filterList.FirstOrDefault() + "_sub")
                 });
             }    
         }
