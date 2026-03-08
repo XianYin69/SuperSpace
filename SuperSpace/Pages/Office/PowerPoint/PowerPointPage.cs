@@ -7,13 +7,16 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
-using SuperSpace.Pages.i18n;
-using static SuperSpace.Pages.i18n.i18n;
+using SuperSpace.Addition.i18n;
+using static SuperSpace.Addition.i18n.i18n;
+using static SuperSpace.Addition.PageSupport.RecentFile;
+using SuperSpace.Addition.PageSupport;
 
 namespace SuperSpace.Pages;
 
 internal sealed partial class PowerPointPage : ListPage
 {
+    List<string> suffix_name = new List<string>() { ".ppt", ".pptx" };
     public PowerPointPage()
     {
         Icon = IconHelpers.FromRelativePath("Assets\\SuperSpacePowerPointPageIcon.png");
@@ -29,14 +32,10 @@ internal sealed partial class PowerPointPage : ListPage
                 Title = T("PowerPointPage.CreateNewDoc"),
                 Subtitle = T("PowerPointPage.CreateNewDocSub"),
                 Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocumentAdd48.png")
-            },
-            new ListItem(new PowerPointRecentPage())
-            {
-                Title = T("PowerPointPage.OpenDoc"),
-                Subtitle = T("PowerPointPage.OpenDocSub"),
-                Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocumentEdit24.png")
             }
         };
+        items.AddRange(new RecentFile("Microsoft", "Office", "Recent", true, suffix_name)
+            .items);
         return items.ToArray();
     }
 }

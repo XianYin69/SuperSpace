@@ -5,8 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SuperSpace.Pages.i18n;
-using static SuperSpace.Pages.i18n.i18n;
+using SuperSpace.Addition.i18n;
+using static SuperSpace.Addition.i18n.i18n;
 
 namespace SuperSpace.Pages.Dev;
 

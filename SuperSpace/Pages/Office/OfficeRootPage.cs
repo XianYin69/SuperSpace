@@ -9,11 +9,14 @@ using SuperSpace.Addition.i18n;
 using static SuperSpace.Addition.i18n.i18n;
 using SuperSpace.Addition.PageSupport;
 using static SuperSpace.Addition.PageSupport.RecentFile;
+using SuperSpace.Addition.SuffixFinder;
 
 namespace SuperSpace.Pages.OfficeRootPage;
 
 internal sealed partial class OfficeRootPage : ListPage
 {
+    List<string> suffix = new List<string>();
+    
     public OfficeRootPage()
     {
         Title = T("");
@@ -39,7 +42,7 @@ internal sealed partial class OfficeRootPage : ListPage
                 Subtitle = T("")
             }
         };
-        var recentFiles = new RecentFile("Microsoft", "Office", "Recent", false, "*");
+        var recentFiles = new RecentFile("Microsoft", "Office", "Recent", false, suffix);
         items.AddRange(recentFiles.items);
         return items.ToArray();
     }

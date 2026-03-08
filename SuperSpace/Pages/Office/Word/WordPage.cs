@@ -33,14 +33,10 @@ internal sealed partial class WordPage : ListPage
                 Title = T("WordPage.CreateNewDoc"),
                 Subtitle = T("WordPage.CreateNewDocSub"),
                 Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocumentAdd48.png"),
-            },
-            new ListItem(new RecentFile("Microsoft","Office","Recent", true, suffix_word))
-            {
-                Title = T("WordPage.OpenDoc"),
-                Subtitle = T("WordPage.OpenDocSub"),
-                Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocumentEdit24.png"),
             }
         };
+        items.AddRange(new RecentFile("Microsoft", "Office", "Recent", true, suffix_word)
+            .items);
         return items.ToArray();
     }
 }
