@@ -6,13 +6,15 @@ using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using SuperSpace.Pages.i18n;
-using static SuperSpace.Pages.i18n.i18n;
+using SuperSpace.Addition.i18n;
+using static SuperSpace.Addition.i18n.i18n;
+using SuperSpace.Addition.PageSupport;
 
 namespace SuperSpace.Pages;
 
 internal sealed partial class ExcelPage : ListPage
 {
+    List<string> suffix_name = new List<string>() { ".xls", ".xlsx" };
     public ExcelPage()
     {
         Icon = IconHelpers.FromRelativePath("Assets\\SuperSpaceExcelPageIcon.png");
@@ -28,14 +30,10 @@ internal sealed partial class ExcelPage : ListPage
                 Title = T("ExcelPage.CreateNewDoc"),
                 Subtitle = T("ExcelPage.CreateNewDocSub"),
                 Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocumentAdd48.png"),
-            },
-            new ListItem(new ExcelRecentPage())
-            {
-                Title = T("ExcelPage.OpenDoc"),
-                Subtitle = T("ExcelPage.OpenDocSub"),
-                Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocumentEdit24.png"),
             }
         };
+        items.AddRange(new RecentFile("Microsoft", "Office", "Recent", true, suffix_name)
+            .items);
         return items.ToArray();
     }
 }
