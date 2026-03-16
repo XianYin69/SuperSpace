@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.IO;
 using Microsoft.CommandPalette.Extensions;
 using Microsoft.CommandPalette.Extensions.Toolkit;
+using static SuperSpace.Addition.GameFinder.Steam;
+using static SuperSpace.Addition.GameFinder.Epic;
 
 namespace SuperSpace.Addition.GameFinder
 {
@@ -17,7 +19,7 @@ namespace SuperSpace.Addition.GameFinder
             
             if (SoftPath.SequenceEqual("steam"))
             {
-
+                        
             } else if (SoftPath.SequenceEqual("Epic"))
             {
 
