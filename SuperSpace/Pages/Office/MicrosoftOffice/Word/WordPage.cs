@@ -1,19 +1,12 @@
 ﻿//It is a new page of office-plus
 using Microsoft.CommandPalette.Extensions;
 using Microsoft.CommandPalette.Extensions.Toolkit;
-using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Text.Json;
-using SuperSpace.Addition.i18n;
 using static SuperSpace.Addition.i18n.i18n;
 using SuperSpace.Addition.PageSupport;
-using static SuperSpace.Addition.PageSupport.RecentFile;
 
-namespace SuperSpace.Pages;
+namespace SuperSpace.Pages.Offce.MicrosoftOffice.Word;
 
 internal sealed partial class WordPage : ListPage
 {
