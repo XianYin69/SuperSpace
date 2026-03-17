@@ -56,6 +56,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\Office\WPS\WenZi\" />
+    <Folder Include="Pages\Office\WPS\BiaoGe\" />
+    <Folder Include="Pages\Office\WPS\YanShi\" />
+  </ItemGroup>
   <Target Name="PrepareAssets" BeforeTargets="BeforeBuild">
     <!-- Copy scale-specific assets to base filenames expected by store validations -->
     <Copy SourceFiles="$(MSBuildProjectDirectory)\Assets\Square150x150Logo.scale-200.png" DestinationFiles="$(MSBuildProjectDirectory)\Assets\Square150x150Logo.png" SkipUnchangedFiles="true" />

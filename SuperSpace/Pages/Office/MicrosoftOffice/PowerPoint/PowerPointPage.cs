@@ -6,13 +6,10 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices;
-using SuperSpace.Addition.i18n;
 using static SuperSpace.Addition.i18n.i18n;
-using static SuperSpace.Addition.PageSupport.RecentFile;
 using SuperSpace.Addition.PageSupport;
 
-namespace SuperSpace.Pages;
+namespace SuperSpace.Pages.Offce.MicrosoftOffice.PowerPoint;
 
 internal sealed partial class PowerPointPage : ListPage
 {

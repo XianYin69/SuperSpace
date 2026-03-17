@@ -6,11 +6,10 @@ using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using SuperSpace.Addition.i18n;
 using static SuperSpace.Addition.i18n.i18n;
 using SuperSpace.Addition.PageSupport;
 
-namespace SuperSpace.Pages;
+namespace SuperSpace.Pages.Offce.MicrosoftOffice.Excel;
 
 internal sealed partial class ExcelPage : ListPage
 {
