@@ -2,15 +2,13 @@
 using Microsoft.CommandPalette.Extensions;
 using Microsoft.CommandPalette.Extensions.Toolkit;
 using System.Collections.Generic;
-using System;
 using System.Diagnostics;
-using System.IO;
-using System.Linq;
 using static SuperSpace.Addition.i18n.i18n;
 using SuperSpace.Addition.PageSupport;
 
 namespace SuperSpace.Pages.Offce.MicrosoftOffice.Excel;
 
+//ExcelPage for open or creat a table file
 internal sealed partial class ExcelPage : ListPage
 {
     List<string> suffix_name = new List<string>() { ".xls", ".xlsx" };
@@ -36,6 +34,8 @@ internal sealed partial class ExcelPage : ListPage
         return items.ToArray();
     }
 }
+
+//It is a function to show recent file and I need to new a package to react that.
 internal sealed partial class RunExcelCommand :　InvokableCommand
 {
     private readonly string _executable;
@@ -59,71 +59,5 @@ internal sealed partial class RunExcelCommand :　InvokableCommand
         {
             return CommandResult.KeepOpen();
         }
-    }
-}
-
-internal sealed partial class ExcelRecentPage :　ListPage
-{
-    private const int MaxRecentItems = 20;
-
-    //Define the suffix filter related to Excel
-    private readonly HashSet<string> _excelExtensions = new(StringComparer.OrdinalIgnoreCase)
-    {
-        "xls", "xlsx", "xlsm", "xlsb", "xltx", "xltm", "csv", "xml", "xlt", "xlm", "slk", "dlf"
-    };
-    public ExcelRecentPage()
-    {
-        Title = T("ExcelPage.WordRecentPage");
-        Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocumentEdit24.png");
-    }
-    public override IListItem[] GetItems()
-    {
-        var items = new List<IListItem>();
-        string recentDir = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
-            "Microsoft", "Office", "Recent");
-        try
-        {
-            if (Directory.Exists(recentDir))
-            {
-                // 1. Get all files
-                var files = new DirectoryInfo(recentDir).GetFiles("*")
-                    .OrderByDescending(f => f.LastWriteTime);
-
-                // 2. Apply filter
-                var filteredFiles = files
-                    .Where(f => IsExcelFile(f.Name))
-                    .Take(MaxRecentItems);
-                foreach (var file in filteredFiles)
-                {
-                    // remove suffix(.lnk)
-                    string DisplayName = file.Name.EndsWith(".lnk", StringComparison.OrdinalIgnoreCase)
-                        ? Path.GetFileNameWithoutExtension(file.Name)
-                        : file.Name;
-                    items.Add(new ListItem(new RunExcelCommand(file.FullName))
-                    {
-                        Title = DisplayName,
-                        Subtitle = T("ExcelPage.LaterEdit", file.LastWriteTime.ToShortDateString()),
-                        Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocument48.png")
-                    });
-                }
-            }
-            if (items.Count == 0)
-            {
-                items.Add(new ListItem(new NoOpCommand()) { Title = T("ExcelPage.CantFindFile") });
-            }
-        }
-        catch (Exception ex)
-        {
-            items.Add(new ListItem(new NoOpCommand()) { Title = T("ExcelPage.ReadError", ex.Message) });
-        }
-        return items.ToArray();
-    }
-    // IsExcelFile method
-    private bool IsExcelFile(string fileName)
-    {
-        /*
-         * check suffix
-         */
-        return _excelExtensions.Any(ext => fileName.Contains(ext, StringComparison.OrdinalIgnoreCase));
     }
 }

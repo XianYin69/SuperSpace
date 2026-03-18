@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Microsoft.CommandPalette.Extensions;
 using Microsoft.CommandPalette.Extensions.Toolkit;
 
+/*
+ *Setting items:
+ *Optimize Folder's Path
+ */
 namespace SuperSpace.Pages.SuperSpaceSettingPage
 {
     internal sealed partial class SuperSpaceSettingPage : ContentPage

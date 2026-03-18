@@ -2,20 +2,14 @@
 // The Microsoft Corporation licenses this file to you under the MIT license.
 // See the LICENSE file in the project root for more information.
 
-using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
-using System.Linq;
 using Microsoft.CommandPalette.Extensions;
 using Microsoft.CommandPalette.Extensions.Toolkit;
-using System.Text.Json;
-using System.Globalization;
-using SuperSpace.Addition.i18n;
 using static SuperSpace.Addition.i18n.i18n;
 
 namespace SuperSpace.Pages;
 
+//Start Page
 internal sealed partial class SuperSpacePage : ListPage
 {
     public SuperSpacePage()
