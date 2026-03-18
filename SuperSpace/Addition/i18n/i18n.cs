@@ -8,26 +8,16 @@ using System.Text.Json.Serialization;
 
 namespace SuperSpace.Addition.i18n;
 
-// 1. 定义源代码生成器上下文
+// International Language Support
+
+// Json Source Generator
 [JsonSerializable(typeof(Dictionary<string, JsonElement>))]
-internal partial class i18nJsonContext : JsonSerializerContext
-{
-}
 
 public static class i18n
 {
     private static Dictionary<string, JsonElement>? _localizedData;
     private static string _currentLang = "en-US";
     private static string _debugInfo = string.Empty;
-
-    // 2. 配置序列化选项（注意：这里不再需要那么多反射配置）
-    private static readonly JsonSerializerOptions _jsonOptions = new()
-    {
-        AllowTrailingCommas = true,
-        ReadCommentHandling = JsonCommentHandling.Skip,
-        PropertyNameCaseInsensitive = true,
-        TypeInfoResolver = i18nJsonContext.Default // 关键：指定生成的 Resolver
-    };
 
     static i18n()
     {
