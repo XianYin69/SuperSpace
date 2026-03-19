@@ -14,8 +14,7 @@ internal sealed partial class PowerPointPage : ListPage
     public PowerPointPage()
     {
         Icon = IconHelpers.FromRelativePath("Assets\\SuperSpacePowerPointPageIcon.png");
-        Title = "PowerPoint";
-        Name = "";
+        Title = T("Office.Microsoft.PowerPointPage.Title");
     }
     public override IListItem[] GetItems()
     {
@@ -23,8 +22,8 @@ internal sealed partial class PowerPointPage : ListPage
         {
             new ListItem(new RunPowerPointCommand("POWERPNT.EXE"))
             {
-                Title = T("PowerPointPage.CreateNewDoc"),
-                Subtitle = T("PowerPointPage.CreateNewDocSub"),
+                Title = T("Office.Microsoft.PowerPointPage.CreateNewFile"),
+                Subtitle = T("Office.Microsoft.PowerPointPage.Subtitle"),
                 Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocumentAdd48.png")
             }
         };

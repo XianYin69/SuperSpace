@@ -1,36 +1,38 @@
 {
-  "default": {
-    "Office": {
-      "Title": "Office",
-      "Subtitle": "it is a subtitle"
+  "default" : {
+    "SuperSpace" : {
+      "Titel" : "SuperSpace"
     },
-    "Developing": {
-      "Title": "Developing",
-      "Subtitle": "it is a developing subtitle",
-      "VisualStudio": {
-        "Title": "Visual Studio and Visual Studio Code",
-        "Subtitle": "Open and edit your project"
-      },
-      "JetBrain": {
-        "Title": "JetBrain IDEs",
-        "Subtitle": "Open JetBrain IDEs",
-        "CLion": {
-          "Title": "CLion",
-          "Subtitle": "Open CLion"
+    "Office" : {
+      "Title" : "Office",
+      "Subtitle" : "Open or Create a Office suit file",
+      "Microsoft" : {
+        "WordPage": {
+          "Title": "Word",
+          "CreateNewDoc": {
+            "Title": "Open Microsoft Word",
+            "Subtitle": "Open Microsoft Word and Create a new file"
+          }
+        },
+        "PowerPointPage": {
+          "Title": "PowerPoint",
+          "CreateNewFile": "Open Microsoft PowerPoint",
+          "Subtitle": "Open Microsot PowerPoint and Create a new file"
+        },
+        "ExcelPage": {
+          "Title": "Excel",
+          "CreateNewFile": "Open Microsft Excel",
+          "Subtitle" : "Open Microsoft Excel and Create a new file"
         }
       }
     },
-    "Gaming": {
-      "Title": "Gaming",
-      "Subtitle": "it is a gaming subtitle",
-      "Steam": {
-        "Title": "Steam",
-        "Subtitle": "Open Steam"
-      },
-      "EpicGame": {
-        "Title": "Epic Games",
-        "Subtitle": "Open Epic Games"
-      }
+    "Developing" : {
+      "Title" : "Programming",
+      "Subtitle" : "Program Your Project"
+    },
+    "Gaming" : {
+      "Title" : "Game",
+      "Subtitle" : "Play game in your libery"
     }
   }
 }

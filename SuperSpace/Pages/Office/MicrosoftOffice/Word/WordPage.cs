@@ -14,8 +14,7 @@ internal sealed partial class WordPage : ListPage
     public WordPage()
     {
         Icon = IconHelpers.FromRelativePath("Assets\\SuperSpaceWordPageIcon.png");
-        Title = "Word";
-        Name = "";
+        Title = T("Office.Microsoft.WordPage.Title");
     }
     public override IListItem[] GetItems()
     {
@@ -23,8 +22,8 @@ internal sealed partial class WordPage : ListPage
         {
             new ListItem(new RunWordCommand("WINWORD.EXE"))
             {
-                Title = T("WordPage.CreateNewDoc"),
-                Subtitle = T("WordPage.CreateNewDocSub"),
+                Title = T("Office.Microsoft.WordPage.CreateNewDoc"),
+                Subtitle = T("Office.Microsoft.WordPage.CreateNewDocSub"),
                 Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocumentAdd48.png"),
             }
         };
