@@ -12,6 +12,9 @@ namespace SuperSpace.Addition.i18n;
 
 // Json Source Generator
 [JsonSerializable(typeof(Dictionary<string, JsonElement>))]
+internal partial class i18nJsonContext : JsonSerializerContext
+{
+};
 
 public static class i18n
 {
