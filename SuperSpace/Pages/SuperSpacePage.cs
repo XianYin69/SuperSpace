@@ -15,8 +15,7 @@ internal sealed partial class SuperSpacePage : ListPage
     public SuperSpacePage()
     {
         Icon = IconHelpers.FromRelativePath("Assets\\SuperSpacePageIcon.png");
-        Title = T("");
-        Name = T("");
+        Title = T("SuperSpace.Title");
     }
 
     public override IListItem[] GetItems()

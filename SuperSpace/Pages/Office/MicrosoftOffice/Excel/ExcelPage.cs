@@ -14,8 +14,7 @@ internal sealed partial class ExcelPage : ListPage
     public ExcelPage()
     {
         Icon = IconHelpers.FromRelativePath("Assets\\SuperSpaceExcelPageIcon.png");
-        Title = "Excel";
-        Name = "";
+        Title = T("Office.Microsoft.ExcelPage.Title");
     }
     public override IListItem[] GetItems()
     {
@@ -23,8 +22,8 @@ internal sealed partial class ExcelPage : ListPage
         {
             new ListItem(new RunExcelCommand("EXCEL.EXE"))
             {
-                Title = T("ExcelPage.CreateNewDoc"),
-                Subtitle = T("ExcelPage.CreateNewDocSub"),
+                Title = T("Office.Microsoft.ExcelPage.CreateNewDoc"),
+                Subtitle = T("Office.Microsoft.ExcelPage.Subtitle"),
                 Icon = IconHelpers.FromRelativePath("Assets\\FluentColorDocumentAdd48.png"),
             }
         };
