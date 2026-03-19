@@ -57,9 +57,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pages\Office\WPS\WenZi\" />
-    <Folder Include="Pages\Office\WPS\BiaoGe\" />
-    <Folder Include="Pages\Office\WPS\YanShi\" />
+    <Folder Include="Pages\Dev\" />
+    <Folder Include="Pages\Game\" />
   </ItemGroup>
   <Target Name="PrepareAssets" BeforeTargets="BeforeBuild">
     <!-- Copy scale-specific assets to base filenames expected by store validations -->
