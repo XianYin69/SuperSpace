@@ -5,6 +5,7 @@
 using System.Collections.Generic;
 using Microsoft.CommandPalette.Extensions;
 using Microsoft.CommandPalette.Extensions.Toolkit;
+using SuperSpace.Pages.Office;
 using static SuperSpace.Addition.i18n.i18n;
 
 namespace SuperSpace.Pages;
@@ -22,11 +23,11 @@ internal sealed partial class SuperSpacePage : ListPage
     {
         var items = new List<IListItem>
         {
-            new ListItem(new NoOpCommand())
+            new ListItem(new rootOfficePage())
             {
                 Title = T("Office.Title"),
                 Subtitle = T("Office.Subtitle"),
-                Icon = IconHelpers.FromRelativePath("Assets\\FluentColorAdd24.png")
+                Icon = IconHelpers.FromRelativePath("Assets\\SuperSpaceRootOfficePageIcon.png")
             },
             new ListItem(new NoOpCommand())
             {
