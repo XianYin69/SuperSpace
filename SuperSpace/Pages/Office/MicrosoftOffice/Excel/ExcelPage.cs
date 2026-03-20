@@ -1,9 +1,10 @@
 ﻿//It is a new page of office-plus
 using Microsoft.CommandPalette.Extensions;
 using Microsoft.CommandPalette.Extensions.Toolkit;
-using System.Collections.Generic;using System.Diagnostics;
+using System.Collections.Generic;
 using static SuperSpace.Addition.i18n.i18n;
 using SuperSpace.Addition.PageSupport;
+using SuperSpace.Addition.OpenApp;
 
 namespace SuperSpace.Pages.Offce.MicrosoftOffice.Excel;
 
@@ -20,7 +21,7 @@ internal sealed partial class ExcelPage : ListPage
     {
         var items = new List<IListItem>
         {
-            new ListItem(new RunExcelCommand("EXCEL.EXE"))
+            new ListItem(new OpenApp("EXCEL.EXE"))
             {
                 Title = T("Office.Microsoft.ExcelPage.CreateNewDoc"),
                 Subtitle = T("Office.Microsoft.ExcelPage.Subtitle"),
@@ -30,32 +31,5 @@ internal sealed partial class ExcelPage : ListPage
         items.AddRange(new RecentFile("Microsoft", "Office", "Recent", true, suffix_name)
             .items);
         return items.ToArray();
-    }
-}
-
-//It is a function to show recent file and I need to new a package to react that.
-internal sealed partial class RunExcelCommand :　InvokableCommand
-{
-    private readonly string _executable;
-    public RunExcelCommand(string executable)
-    {
-        _executable = executable;
-    }
-
-    public override CommandResult Invoke()
-    {
-        try
-        {
-            Process.Start(new ProcessStartInfo
-            {
-                FileName = _executable,
-                UseShellExecute = true
-            });
-            return CommandResult.Dismiss();
-        }
-        catch
-        {
-            return CommandResult.KeepOpen();
-        }
     }
 }

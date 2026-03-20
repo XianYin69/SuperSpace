@@ -6,9 +6,6 @@ using System;
 using System.Runtime.InteropServices;
 using System.Threading;
 using Microsoft.CommandPalette.Extensions;
-using System.Linq;
-using System.Collections.Generic;
-using Microsoft.CommandPalette.Extensions.Toolkit;
 
 namespace SuperSpace;
 
