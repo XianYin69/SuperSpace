@@ -7,10 +7,12 @@ namespace SuperSpace.Addition.OpenApp;
 internal sealed partial class OpenApp : InvokableCommand
 {
     private readonly string _excutable;
+    private readonly bool _useShellExecute;
 
-    public OpenApp(string excutable)
+    public OpenApp(string excutable, bool useShellExecute)
     {
         _excutable = excutable;
+        _useShellExecute = useShellExecute;
     }
 
     public override CommandResult Invoke()
@@ -20,7 +22,7 @@ internal sealed partial class OpenApp : InvokableCommand
             Process.Start(new ProcessStartInfo
             {
                 FileName = _excutable,
-                UseShellExecute =true
+                UseShellExecute = _useShellExecute
             });
             return CommandResult.Dismiss();
         } catch
