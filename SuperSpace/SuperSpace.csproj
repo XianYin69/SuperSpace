@@ -52,14 +52,17 @@
     <Content Include="Assets\**\*.png" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Remove="AppPackages\**" />
+    <EmbeddedResource Remove="AppPackages\**" />
+    <None Remove="AppPackages\**" />
+  </ItemGroup>
+  <ItemGroup>
     <None Update="Languages_o.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="AppPackages\" />
     <Folder Include="Pages\Dev\" />
-    <Folder Include="Pages\Game\" />
   </ItemGroup>
   <Target Name="PrepareAssets" BeforeTargets="BeforeBuild">
     <!-- Copy scale-specific assets to base filenames expected by store validations -->
@@ -122,6 +125,10 @@
     <!-- In release, also ignore the aforementioned ILLink warning -->
     <ILLinkTreatWarningsAsErrors>false</ILLinkTreatWarningsAsErrors>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PRIResource Remove="AppPackages\**" />
+  </ItemGroup>
 
 
 </Project>

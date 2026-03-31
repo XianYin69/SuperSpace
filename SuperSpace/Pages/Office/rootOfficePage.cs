@@ -13,7 +13,7 @@ namespace SuperSpace.Pages.Office
     {
         public rootOfficePage()
         {
-            Icon = IconHelpers.FromRelativePath("Assets\\");
+            Icon = IconHelpers.FromRelativePath("Assets\\SuperSpace");
             Title = T("Office.Title");
         } 
         public override IListItem[] GetItems()
