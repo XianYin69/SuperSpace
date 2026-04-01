@@ -8,8 +8,8 @@ namespace SuperSpace.Addition.AppSupport.SteamSupport.AcfSupport
 {
     public static class AcfSupport
     {
-        private static string _AppId;
-        private static string _Name;
+        private static string _AppId = string.Empty;
+        private static string _Name = string.Empty;
 
         public static void Parse(string filePath)
         {

@@ -20,7 +20,7 @@ internal sealed partial class PowerPointPage : ListPage
     {
         var items = new List<IListItem>
         {
-            new ListItem(new OpenApp("POWERPNT.EXE"))
+            new ListItem(new OpenApp("POWERPNT.EXE", true))
             {
                 Title = T("Office.Microsoft.PowerPointPage.CreateNewFile"),
                 Subtitle = T("Office.Microsoft.PowerPointPage.Subtitle"),

@@ -7,6 +7,7 @@ using SuperSpace.Addition.AppSupport.SteamSupport.AcfSupport;
 using SuperSpace.Addition.AppSupport.SteamSupport.VdfSupport;
 using SuperSpace.Addition.OpenApp;
 using System.IO;
+using System.Linq;
 
 namespace SuperSpace.Addition.AppSupport.SteamSupport
 
@@ -20,7 +21,7 @@ namespace SuperSpace.Addition.AppSupport.SteamSupport
             try
             {
                 //use VdfSupport to get the path of library
-                var vdfProvider = new VdfSupport.VdfSupport(@"HKEY)CURRENT_USER\Software\Valve\Steam", "libraryfolders.vdf", "steamapps");
+                var vdfProvider = new VdfSupport.VdfSupport(@"HKEY_CURRENT_USER\Software\Valve\Steam", "libraryfolders.vdf", "steamapps");
                 //process acf file
                 var targetDirectories = vdfProvider.LibraryPaths
                     .Select(path => Path.Combine(path, "steamapps"))

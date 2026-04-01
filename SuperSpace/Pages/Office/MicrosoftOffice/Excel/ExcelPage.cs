@@ -21,7 +21,7 @@ internal sealed partial class ExcelPage : ListPage
     {
         var items = new List<IListItem>
         {
-            new ListItem(new OpenApp("EXCEL.EXE"))
+            new ListItem(new OpenApp("EXCEL.EXE", true))
             {
                 Title = T("Office.Microsoft.ExcelPage.CreateNewDoc"),
                 Subtitle = T("Office.Microsoft.ExcelPage.Subtitle"),

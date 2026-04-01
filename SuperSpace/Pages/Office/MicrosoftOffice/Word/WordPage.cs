@@ -20,7 +20,7 @@ internal sealed partial class WordPage : ListPage
     {
         var items = new List<IListItem>
         {
-            new ListItem(new OpenApp("Word.EXE"))
+            new ListItem(new OpenApp("Word.EXE", true))
             {
                 Title = T("Office.Microsoft.WordPage.CreateNewDoc"),
                 Subtitle = T("Office.Microsoft.WordPage.CreateNewDocSub"),

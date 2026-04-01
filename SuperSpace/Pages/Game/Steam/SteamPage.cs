@@ -28,7 +28,7 @@ namespace SuperSpace.Pages.Game.Steam
                     Title = T("")
                 }
             };
-            Items.AddRange(new SteamSupport().itmes);
+            Items.AddRange(new SteamSupport().items);
             return Items.ToArray();
         }
     }; 
