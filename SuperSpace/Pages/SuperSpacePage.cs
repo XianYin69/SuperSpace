@@ -5,6 +5,8 @@
 using System.Collections.Generic;
 using Microsoft.CommandPalette.Extensions;
 using Microsoft.CommandPalette.Extensions.Toolkit;
+using SuperSpace.Pages.Game;
+using SuperSpace.Pages.Game.Steam;
 using SuperSpace.Pages.Office;
 using static SuperSpace.Addition.i18n.i18n;
 
@@ -35,7 +37,7 @@ internal sealed partial class SuperSpacePage : ListPage
                 Subtitle = T("Developing.Subtitle"),
                 Icon = IconHelpers.FromRelativePath("Assets\\FluentColorAdd24.png")
             },
-            new ListItem(new NoOpCommand())
+            new ListItem(new rootGamePage())
             {
                 Title = T("Gaming.Title"),
                 Subtitle = T("Gaming.Subtitle"),
