@@ -41,7 +41,7 @@ internal sealed partial class SuperSpacePage : ListPage
             {
                 Title = T("Gaming.Title"),
                 Subtitle = T("Gaming.Subtitle"),
-                Icon = IconHelpers.FromRelativePath("Assets\\FluentColorAdd24.png")
+                Icon = IconHelpers.FromRelativePath("Assets\\SuperSpaceRootGamePageIcon.png")
             }
         };
         return items.ToArray();

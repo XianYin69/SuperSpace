@@ -12,7 +12,7 @@ internal sealed partial class rootGamePage : ListPage
 {
     public rootGamePage()
     {
-        Icon = IconHelpers.FromRelativePath("Assets:\\");
+        Icon = IconHelpers.FromRelativePath("Assets\\SuperSpaceRootGamePageIcon.png");
         Title = T("");
     }
 
@@ -24,7 +24,7 @@ internal sealed partial class rootGamePage : ListPage
             {
                 Title = T(""),
                 Subtitle = T(""),
-                Icon = IconHelpers.FromRelativePath("Assets:\\")
+                Icon = IconHelpers.FromRelativePath("Assets\\SuperSpaceSteamPageIcon.png")
             }
         };
         return items.ToArray();

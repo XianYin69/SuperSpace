@@ -14,17 +14,19 @@ namespace SuperSpace.Pages.Game.Steam
     internal sealed partial class SteamPage : ListPage {
         public SteamPage()
         {
-            Icon = IconHelpers.FromRelativePath("Assets\\");
+            Icon = IconHelpers.FromRelativePath("Assets\\SuperSpaceSteamPageIcon.png");
             Title = T("");
         }
 
         public override IListItem[] GetItems()
         {
+            string steamDir = Microsoft.Win32.Registry.GetValue(@"HKEY_CURRENT_USER\Software\Valve\Steam", "SteamPath", null) as string ?? "";
+            string steamExecutePath = Path.Combine(steamDir, "steam.exe");
             var Items = new List<IListItem>
             {
-                new ListItem(new OpenApp(" ", false))
+                new ListItem(new OpenApp(steamExecutePath, false))
                 {
-                    Icon = IconHelpers.FromRelativePath(""),
+                    Icon = IconHelpers.FromRelativePath("Assets\\SuperSpaceSteamPageIcon.png"),
                     Title = T("")
                 }
             };

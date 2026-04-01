@@ -130,5 +130,20 @@
     <PRIResource Remove="AppPackages\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Assets\OfficePlusSteamPageIcon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Assets\SuperSpaceRootGamePageIcon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Assets\SuperSpaceRootOfficePageIcon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Assets\SuperSpaceSteamPageIcon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 
 </Project>
