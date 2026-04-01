@@ -33,8 +33,14 @@ namespace SuperSpace.Addition.AppSupport.SteamSupport
                 //Add this items to list
                 foreach (var file in allAcfFiles)
                 {
-                    items.Add(new ListItem(new OpenApp(AcfSupport.LuncherPath(file), true))) {
-                        Title = AcfSupport.Name()
+                    string launchUrl = AcfSupport.AcfSupport.LauncherPath(file);
+                    string gameName = AcfSupport.AcfSupport.Name();
+                    if (!string.IsNullOrEmpty(launchUrl))
+                    {
+                        items.Add(new ListItem(new OpenApp.OpenApp(launchUrl, true))
+                        {
+                            Title = gameName
+                        });
                     }
                 };
             } catch (Exception) {
