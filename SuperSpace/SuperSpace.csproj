@@ -62,7 +62,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pages\Dev\" />
+    <Folder Include="Pages\Dev\JetBrain\" />
+    <Folder Include="Pages\Dev\VisualStudio\" />
   </ItemGroup>
   <Target Name="PrepareAssets" BeforeTargets="BeforeBuild">
     <!-- Copy scale-specific assets to base filenames expected by store validations -->
