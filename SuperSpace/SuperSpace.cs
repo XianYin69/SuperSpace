@@ -32,3 +32,9 @@ public sealed partial class SuperSpace : IExtension, IDisposable
 
     public void Dispose() => this._extensionDisposedEvent.Set();
 }
+
+/*Define settings*/
+/*Including:
+ *- Set pathes of programs
+ *- Provide icon defining
+ */

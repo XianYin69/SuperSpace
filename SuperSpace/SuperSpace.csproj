@@ -5,7 +5,7 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
 
     <WindowsSdkPackageVersion>10.0.26100.68-preview</WindowsSdkPackageVersion>
-    <TargetFramework>net9.0-windows10.0.26100.0</TargetFramework>
+    <TargetFramework>net10.0-windows10.0.26100.0</TargetFramework>
     <TargetPlatformMinVersion>10.0.19041.0</TargetPlatformMinVersion>
     <SupportedOSPlatformVersion>10.0.19041.0</SupportedOSPlatformVersion>
     <RuntimeIdentifiers>win-x64;win-arm64</RuntimeIdentifiers>
@@ -52,9 +52,18 @@
     <Content Include="Assets\**\*.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Update="Languages.json">
+    <Compile Remove="AppPackages\**" />
+    <EmbeddedResource Remove="AppPackages\**" />
+    <None Remove="AppPackages\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Languages_o.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\Dev\VisualStudio\" />
+    <Folder Include="Pages\Dev\JetBrain\" />
   </ItemGroup>
   <Target Name="PrepareAssets" BeforeTargets="BeforeBuild">
     <!-- Copy scale-specific assets to base filenames expected by store validations -->
@@ -117,6 +126,25 @@
     <!-- In release, also ignore the aforementioned ILLink warning -->
     <ILLinkTreatWarningsAsErrors>false</ILLinkTreatWarningsAsErrors>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PRIResource Remove="AppPackages\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Assets\OfficePlusSteamPageIcon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Assets\SuperSpaceRootGamePageIcon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Assets\SuperSpaceRootOfficePageIcon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Assets\SuperSpaceSteamPageIcon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 
 
 </Project>
