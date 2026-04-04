@@ -4,107 +4,99 @@ using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.IO;
 using System.Text.Json;
-using System.Text.Json.Serialization;
 
 namespace SuperSpace.Addition.i18n;
 
-// International Language Support
-
-// Json Source Generator
-[JsonSerializable(typeof(Dictionary<string, JsonElement>))]
-internal partial class i18nJsonContext : JsonSerializerContext
-{
-};
-
 public static class i18n
 {
-    private static Dictionary<string, JsonElement>? _localizedData;
-    private static string _currentLang = "en-US";
-    private static string _debugInfo = string.Empty;
+    private static readonly JsonElement _rootNode;
+    private static readonly string _currentLang;
+    private static readonly bool _isInitialized;
 
     static i18n()
     {
-        LoadLanguage();
-    }
-
-    private static void LoadLanguage()
-    {
         try
         {
-            string assemblyPath = AppContext.BaseDirectory;
-            string jsonPath = Path.Combine(assemblyPath, "Languages.json");
-
+            string jsonPath = Path.Combine(AppContext.BaseDirectory, "Languages.json");
             if (!File.Exists(jsonPath))
             {
-                _debugInfo = $"[Missing: {jsonPath}]";
+                _currentLang = CultureInfo.CurrentUICulture.Name;
                 return;
             }
 
-            string jsonContent = File.ReadAllText(jsonPath);
+            // 直接读取字节数组，避开字符串二次转换
+            byte[] jsonData = File.ReadAllBytes(jsonPath);
+            using (JsonDocument doc = JsonDocument.Parse(jsonData))
+            {
+                // Clone 出一份内存中的副本，允许 JsonDocument 释放
+                _rootNode = doc.RootElement.Clone();
+            }
 
-            // 3. 使用 Context 实例进行反序列化，彻底消除 IL3050/IL2026
-            _localizedData = JsonSerializer.Deserialize(
-                jsonContent,
-                i18nJsonContext.Default.DictionaryStringJsonElement);
-
-            if (_localizedData == null) return;
-
-            // 语言匹配逻辑保持不变...
-            var uiCulture = CultureInfo.CurrentUICulture;
-            string fullTag = uiCulture.Name;
-            string langTwoLetter = uiCulture.TwoLetterISOLanguageName;
-
-            if (_localizedData.ContainsKey(fullTag))
-                _currentLang = fullTag;
-            else if (langTwoLetter == "zh")
-                _currentLang = _localizedData.ContainsKey("zh-CN") ? "zh-CN" : "en-US";
-            else
-                _currentLang = _localizedData.ContainsKey(langTwoLetter) ? langTwoLetter : "en-US";
+            _isInitialized = _rootNode.ValueKind == JsonValueKind.Object;
+            _currentLang = DetermineLanguage(_rootNode);
         }
-        catch (Exception ex)
+        catch
         {
-            _debugInfo = $"[Error: {ex.Message}]";
             _currentLang = "en-US";
+            _isInitialized = false;
         }
     }
 
-    // T 方法和 TryGetFromLang 方法保持不变，使用之前提供的 Null 安全版本即可
+    private static string DetermineLanguage(JsonElement root)
+    {
+        var ui = CultureInfo.CurrentUICulture;
+        string full = ui.Name;
+        string shortName = ui.TwoLetterISOLanguageName;
+
+        if (root.TryGetProperty(full, out _)) return full;
+        if (shortName == "zh" && root.TryGetProperty("zh-CN", out _)) return "zh-CN";
+        if (root.TryGetProperty(shortName, out _)) return shortName;
+
+        return root.TryGetProperty("en-US", out _) ? "en-US" : "default";
+    }
+
     public static string T(string path, params object[] args)
     {
-        if (_localizedData == null) return $"{path} {_debugInfo}";
-        string[] keys = path.Split('.');
-        if (TryGetFromLang(_currentLang, keys, out string? result)) return FormatString(result, args);
-        if (TryGetFromLang("en-US", keys, out result)) return FormatString(result, args);
-        if (TryGetFromLang("default", keys, out result)) return FormatString(result, args);
+        if (!_isInitialized) return path;
+
+        // 查找优先级：当前语言 -> en-US -> default
+        if (TryResolve(path, _currentLang, out string? res)) return Format(res, args);
+        if (_currentLang != "en-US" && TryResolve(path, "en-US", out res)) return Format(res, args);
+        if (_currentLang != "default" && TryResolve(path, "default", out res)) return Format(res, args);
+
         return path;
     }
 
-    private static bool TryGetFromLang(string langKey, string[] keys, [NotNullWhen(true)] out string? result)
+    private static bool TryResolve(string path, string langKey, [NotNullWhen(true)] out string? result)
     {
         result = null;
-        if (_localizedData == null || !_localizedData.TryGetValue(langKey, out JsonElement current))
-            return false;
-        try
+        if (!_rootNode.TryGetProperty(langKey, out JsonElement current)) return false;
+
+        // 高性能优化：使用 Span 遍历路径，不产生 string.Split 的堆分配
+        ReadOnlySpan<char> pathSpan = path.AsSpan();
+        int start = 0;
+        while (start < pathSpan.Length)
         {
-            foreach (var key in keys)
-            {
-                if (current.ValueKind == JsonValueKind.Object && current.TryGetProperty(key, out var next))
-                    current = next;
-                else
-                    return false;
-            }
-            result = current.GetString();
-            return result != null;
+            int dotIndex = pathSpan[start..].IndexOf('.');
+            ReadOnlySpan<char> key = dotIndex == -1 ? pathSpan[start..] : pathSpan.Slice(start, dotIndex);
+
+            if (current.ValueKind != JsonValueKind.Object || !current.TryGetProperty(key, out current))
+                return false;
+
+            if (dotIndex == -1) break;
+            start += dotIndex + 1;
         }
-        catch { return false; }
+
+        result = current.ValueKind == JsonValueKind.String ? current.GetString() : null;
+        return result != null;
     }
 
-    private static string FormatString(string template, object[] args)
+    private static string Format(string template, object[] args)
     {
-        if (string.IsNullOrEmpty(template)) return string.Empty;
+        if (args.Length == 0) return template;
         try
         {
-            return args.Length == 0 ? template : string.Format(CultureInfo.CurrentCulture, template, args);
+            return string.Format(CultureInfo.CurrentCulture, template, args);
         }
         catch { return template; }
     }
