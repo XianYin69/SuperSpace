@@ -1,6 +1,10 @@
-# SuperSpace
+# SuperSpace（停止开发）
 这是一个PowerToys Command Palette扩展。
 
+## 停止开发的原因
+- 因为某次IDE更新，我的插件没法和PowerToys CommandPalette 进行通信而没法运行
+- 开发流管理混乱
+- 实在不喜欢微软
 
 ## 语言
 [简体中文](./README.md)  
